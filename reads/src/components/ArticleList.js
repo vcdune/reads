@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import firebase from "firebase/compat/app"; // Import only firebase/app if using version 9
+import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
+import { Link } from "react-router-dom";
 
 export default function ArticleList() {
   const [documents, setDocuments] = useState([]);
@@ -31,7 +32,9 @@ export default function ArticleList() {
         <ul className="post">
           {documents.map((document) => (
             <li key={document.id}>
-              <p>{document.documentTitle}</p>
+              <Link to={`/pages/${document.id}`}>
+                <strong>{document.documentTitle}</strong>
+              </Link>
               <p>{document.author}</p>
               <p>{document.date}</p>
               <p>{document.preview}</p>

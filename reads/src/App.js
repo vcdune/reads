@@ -1,7 +1,9 @@
 // Pages
 import Home from "./pages/Home";
-
+import ReadPage from "./pages/ReadPage";
 import "./App.css";
+
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 // Firebase
 import firebase from "firebase/compat/app";
@@ -17,15 +19,20 @@ firebase.initializeApp({
   storageBucket: "omilia-f0b42.appspot.com",
   messagingSenderId: "11465010307",
   appId: "1:11465010307:web:78a4221e498bfea2af7fb6",
-  measurementId: "G-8FWM5P1VDC"
+  measurementId: "G-8FWM5P1VDC",
 });
-
-const auth = firebase.auth();
 
 function App() {
   return (
     <>
-      <Home />
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* route to pages */}
+        <Route path="/pages/:id" element={<ReadPage />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
     </>
   );
 }
