@@ -39,19 +39,30 @@ const DocumentView = () => {
   return (
     <>
       <Header />
-      <div>
-        {documentData ? (
-          <>
-            <h1>{documentData.documentTitle}</h1>
-            <div
-              className="documentView"
-              dangerouslySetInnerHTML={{ __html: documentData.content }}
-            />
-          </>
-        ) : (
-          <p>Loading...</p>
-        )}
-        <a onClick={handleReturn}>Return to Home</a>
+      <div className="page-view">
+        <div className="page-container">
+          {" "}
+          {/* Add a container div */}
+          {documentData ? (
+            <>
+              <h1 className="page-title">{documentData.documentTitle}</h1>
+              <img
+                src={documentData.imageURL}
+                alt={documentData.documentTitle}
+                className="document-image"
+              />
+              <div
+                className="documentView"
+                dangerouslySetInnerHTML={{ __html: documentData.content }}
+              />
+            </>
+          ) : (
+            <p>Loading...</p>
+          )}
+          <a onClick={handleReturn} className="return">
+            Return Home
+          </a>
+        </div>
       </div>
     </>
   );
