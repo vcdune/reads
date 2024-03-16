@@ -31,13 +31,15 @@ export default function ArticleList() {
       <div className="documentList">
         <ul className="post">
           {documents.map((document) => (
-            <li key={document.id}>
-              <Link to={`/pages/${document.id}`}>
-                <strong>{document.documentTitle}</strong>
-              </Link>
-              <p>{document.author}</p>
-              <p>{document.date}</p>
-              <p>{document.preview}</p>
+            <li key={document.id} className="document-item">
+              <img src={document.imageURL} alt={document.documentTitle} className="document-image" />
+              <div className="document-info">
+                <Link className="document-title" to={`/pages/${document.id}`}>
+                  <strong>{document.documentTitle}</strong>
+                </Link>
+                <p className="document-preview">{document.preview}</p>
+                <p className="document-date">{document.date}</p>
+              </div>
             </li>
           ))}
         </ul>

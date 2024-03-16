@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 /* HEADER */
 .nav {
   display: flex;
   justify-content: center;
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 3%;
 }
 
 .nav li {
@@ -15,4 +16,57 @@
 .nav a {
   text-decoration: none;
   color: black;
+  font-family: 'Manrope', sans-serif;
+}
+
+/* DOCUMENT LIST */
+.documentList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 3% auto;
+  max-width: 1200px;
+}
+
+.document-item {
+  max-width: 600px; /* Adjust the maximum width of each document item */
+  margin: 10px;
+  list-style-type: none;
+}
+
+.document-image {
+  width: 100%; /* Set width to 100% to fill the container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure image does not exceed its container's width */
+  max-height: 330px; /* Set a maximum height for the image */
+  border-radius: 8px;
+  object-fit: cover; 
+  margin-bottom: 2%;
+}
+
+.document-details {
+  padding: 10px;
+}
+
+.document-title {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Manrope', sans-serif;
+}
+
+.document-author {
+  color: #888888;
+  font-style: italic;
+  font-family: 'Manrope', sans-serif;
+}
+
+.document-author,
+.document-preview,
+.document-date {
+  color: #888888;
+  font-family: 'Manrope', sans-serif;
 }
