@@ -1,7 +1,9 @@
 // Pages
 import Home from "./pages/Home";
+import Blog from "./pages/Blog";
 import ReadPage from "./pages/ReadPage";
 import Contact from "./pages/Contact";
+import VCapital from "./pages/VCapital";
 import "./App.css";
 //import bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -31,7 +33,9 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/venture-capital" element={<VCapital />} />
         {/* route to pages */}
         <Route path="/pages/:id" element={<ReadPage />} />
         <Route path="*" element={<Home />} />

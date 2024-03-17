@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
+
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const DocumentView = () => {
   const { id } = useParams();
@@ -28,14 +30,6 @@ const DocumentView = () => {
     fetchDocument();
   }, [id]);
 
-  const handleReturn = () => {
-    if (navigate(-1)) {
-      navigate(-1);
-    } else {
-      navigate("/home");
-    }
-  };
-
   return (
     <>
       <Header />
@@ -59,9 +53,7 @@ const DocumentView = () => {
           ) : (
             <p>Loading...</p>
           )}
-          <a onClick={handleReturn} className="return">
-            Return Home
-          </a>
+          <Footer />
         </div>
       </div>
     </>
