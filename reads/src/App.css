@@ -24,6 +24,11 @@
   font-family: "Manrope", sans-serif;
 }
 
+.nav a:hover {
+  color: #cd9316;
+  font-weight: bold;
+}
+
 /* DOCUMENT LIST */
 .documentList {
   display: flex;
@@ -46,9 +51,11 @@
   height: auto; /* Maintain aspect ratio */
   max-width: 100%; /* Ensure image does not exceed its container's width */
   max-height: 330px; /* Set a maximum height for the image */
-  border-radius: 8px;
+  border-radius: 10px;
   object-fit: cover;
   margin-bottom: 2%;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
 }
 
 .document-details {

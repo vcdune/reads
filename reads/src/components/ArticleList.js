@@ -30,9 +30,18 @@ export default function ArticleList() {
     <div>
       <div className="documentList">
         <ul className="post">
+          <h4 className="document-item">
+            The Latest from Project Dune.{" "}
+            <a href="" className="keyterm">Apply to be a writer.</a>
+          </h4>
           {documents.map((document) => (
             <li key={document.id} className="document-item">
-              <img src={document.imageURL} alt={document.documentTitle} className="document-image" />
+              <p className="keyterm">{document.genre}</p>
+              <img
+                src={document.imageURL}
+                alt={document.documentTitle}
+                className="document-image"
+              />
               <div className="document-info">
                 <Link className="document-title" to={`/pages/${document.id}`}>
                   <strong>{document.documentTitle}</strong>

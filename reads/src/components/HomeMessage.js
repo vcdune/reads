@@ -4,7 +4,6 @@ export default function HomeMessage() {
       <div className="page-container">
         <h1
           style={{
-            borderBottom: "1px solid #ccc",
             marginBottom: "3%",
             paddingBottom: "1%",
           }}
