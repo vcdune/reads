@@ -6,7 +6,7 @@ export default function Header() {
         <li><a href="/home">Articles</a></li>
         {/* <li><a href="">Search</a></li> */}
         <li><a href="https://twitter.com/abdulmendahawi">Twitter</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="/contact">Contact</a></li>
         {/* <li><a href="">Log-In</a></li> */}
       </ul>
     </nav>

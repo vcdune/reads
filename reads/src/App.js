@@ -1,6 +1,7 @@
 // Pages
 import Home from "./pages/Home";
 import ReadPage from "./pages/ReadPage";
+import Contact from "./pages/Contact";
 import "./App.css";
 //import bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -30,6 +31,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
         {/* route to pages */}
         <Route path="/pages/:id" element={<ReadPage />} />
         <Route path="*" element={<Home />} />
