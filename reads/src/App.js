@@ -36,7 +36,6 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/venture-capital" element={<VCapital />} />
-        {/* route to pages */}
         <Route path="/pages/:id" element={<ReadPage />} />
         <Route path="*" element={<Home />} />
       </Routes>
