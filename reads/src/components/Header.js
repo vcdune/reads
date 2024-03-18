@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <nav>
+    <nav className="header">
       <ul className="nav">
         <li><a href="/home"><strong>Project Dune</strong></a></li>
         <li><a href="/blog">Articles</a></li>

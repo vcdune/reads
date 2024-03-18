@@ -2,20 +2,6 @@ export default function HomeMessage() {
   return (
     <div className="page-view">
       <div className="page-container">
-        <h1
-          style={{
-            marginBottom: "3%",
-            paddingBottom: "1%",
-          }}
-        >
-          <span className="keyterm">Project Dune</span>// the place where cool
-          $h!t happens.
-        </h1>
-        <p>
-          <strong>
-            8,000+ readers, 100+ articles, 10+ startups, 5+ universities, 3+ VC
-          </strong>
-        </p>
         <p>
           <span className="keyterm">a message from the team.</span>
         </p>
