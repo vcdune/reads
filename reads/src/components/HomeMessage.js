@@ -8,8 +8,8 @@ export default function HomeMessage() {
             paddingBottom: "1%",
           }}
         >
-          <span className="keyterm">Project Dune.</span> The platform where
-          dreamers become founders.
+          <span className="keyterm">Project Dune</span>// the place where cool
+          $h!t happens.
         </h1>
         <p>
           <strong>
@@ -17,19 +17,19 @@ export default function HomeMessage() {
           </strong>
         </p>
         <h5 style={{ marginBottom: "5%", marginTop: "5%" }}>
-          Project Dune x Middle East
+          Project Dune x MENA (Middle East North Africa)
         </h5>
         <p>
-          <span className="keyterm">Introduction</span>
+          <span className="keyterm">a message from the team.</span>
         </p>
         <p>
-          <strong>We are Project Dune -</strong> a platform designed for the
-          Middle East's entrepreneurial dreamers. Our mission is to ignite the
-          region's startup ambitions by fostering connections, nurturing ideas,
-          and providing a launchpad for innovation.
+          <strong>We're the brains behind 'Project Dune' -</strong> a platform
+          designed for the Middle East's entrepreneurial dreamers. Our mission
+          is to ignite the region's startup ambitions by fostering connections,
+          nurturing ideas, and providing a launchpad for innovation.
         </p>
         <p>
-          <span className="keyterm">Our Mission?</span> To create a platform for
+          <span className="keyterm">our mission?</span> To create a platform for
           those in the Middle East to delve into venture capital, technology,
           and research advancements. We aim to keep you informed, engaged, and
           inspired. Welcome to Project Dune - where curiosity meets innovation,
@@ -41,13 +41,13 @@ export default function HomeMessage() {
           <strong>We are here to help you build dreams.</strong>
         </p>
         <p>
-          <span className="keyterm">Our Ecosystem</span>
+          <span className="keyterm">our ecosystem.</span>
         </p>
         <p>
           <ul className="resource-list">
             <li>
               <h6>
-                <a href="">Project Dune Publishing</a>
+                <a href="https://dune-terminal.vercel.app/">Project Dune Publishing</a>
               </h6>
               <p>
                 Share insights, spark discussions, and have your startup story
@@ -65,7 +65,7 @@ export default function HomeMessage() {
             </li>
             <li>
               <h6>
-                <a href="">Project Dune Community</a>
+                <a href="/community">Project Dune Community</a>
               </h6>
               <p>
                 A global network where MENA's founders, investors, and
@@ -91,10 +91,10 @@ export default function HomeMessage() {
           any inquiries or collaborations.
         </p> */}
         <p>
-          <span className="keyterm">Contact</span>
+          <span className="keyterm">don't be shy, send a hello.</span>
         </p>
         <p>
-          Feel free to reach out to us at <strong>contact@dune.com</strong> for
+          Feel free to reach out to us at <strong>dunevc@gmail.com</strong> for
           any inquiries or collaborations.
         </p>
       </div>
