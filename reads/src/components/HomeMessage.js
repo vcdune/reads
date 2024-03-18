@@ -16,9 +16,6 @@ export default function HomeMessage() {
             8,000+ readers, 100+ articles, 10+ startups, 5+ universities, 3+ VC
           </strong>
         </p>
-        <h5 style={{ marginBottom: "5%", marginTop: "5%" }}>
-          Project Dune x MENA (Middle East North Africa)
-        </h5>
         <p>
           <span className="keyterm">a message from the team.</span>
         </p>
