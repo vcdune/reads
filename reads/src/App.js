@@ -2,6 +2,7 @@
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import ReadPage from "./pages/ReadPage";
+import Community from "./pages/Community";
 import Contact from "./pages/Contact";
 import VCapital from "./pages/VCapital";
 import "./App.css";
@@ -34,6 +35,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/community" element={<Community />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/venture-capital" element={<VCapital />} />
         <Route path="/pages/:id" element={<ReadPage />} />

@@ -8,8 +8,8 @@ export default function HomeMessage() {
             paddingBottom: "1%",
           }}
         >
-          <span className="keyterm">Hey dreamers,</span> we are Project Dune, a
-          venture community based in the Middle East.
+          <span className="keyterm">Project Dune.</span> The platform where
+          dreamers become founders.
         </h1>
         <p>
           <strong>
@@ -23,9 +23,10 @@ export default function HomeMessage() {
           <span className="keyterm">Introduction</span>
         </p>
         <p>
-          We're the brains behind Project Dune, a news platform crafted by
-          alumni of NYU Abu Dhabi, New York University, University of
-          Washington, and UC Davis.
+          <strong>We are Project Dune -</strong> a platform designed for the
+          Middle East's entrepreneurial dreamers. Our mission is to ignite the
+          region's startup ambitions by fostering connections, nurturing ideas,
+          and providing a launchpad for innovation.
         </p>
         <p>
           <span className="keyterm">Our Mission?</span> To create a platform for
@@ -36,24 +37,49 @@ export default function HomeMessage() {
         </p>
         <p>
           It does not matter if you have founded a startup ($), are a student,
-          or just have an idea. We are here to help you build dreams.
+          or just have an idea.{" "}
+          <strong>We are here to help you build dreams.</strong>
         </p>
         <p>
-          <span className="keyterm">Our Resources</span>
+          <span className="keyterm">Our Ecosystem</span>
         </p>
         <p>
           <ul className="resource-list">
             <li>
-              <a href="/blog">Project Dune | Articles</a>
+              <h6>
+                <a href="">Project Dune Publishing</a>
+              </h6>
+              <p>
+                Share insights, spark discussions, and have your startup story
+                heard through our curated editorial space.
+              </p>
             </li>
             <li>
-              <a href="/blog">Project Dune | Showcase</a>
+              <h6>
+                <a href="">Project Dune Jobs</a>
+              </h6>
+              <p>
+                Connect talent with opportunity through our Middle East-focused
+                startup job board.
+              </p>
             </li>
             <li>
-              <a href="/blog">Project Dune | Newsletter</a>
+              <h6>
+                <a href="">Project Dune Community</a>
+              </h6>
+              <p>
+                A global network where MENA's founders, investors, and
+                changemakers convene to collaborate.
+              </p>
             </li>
             <li>
-              <a href="/blog">Project Dune | Community</a>
+              <h6>
+                <a href="">Project Dune Updates</a>
+              </h6>
+              <p>
+                Stay ahead of the curve with our newsletter highlighting the
+                latest startup trends and founders to watch.
+              </p>
             </li>
           </ul>
         </p>
