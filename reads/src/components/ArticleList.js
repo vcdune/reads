@@ -31,14 +31,21 @@ export default function ArticleList() {
       <div className="documentList">
         <ul className="post">
           <h4 className="document-item">
-            Latest From Community.{" "}
-            <a href="https://dune-terminal.vercel.app/" className="keyterm">Dune Terminal now open.</a>
+            Community Latest.{" "}
+            <a href="https://dune-terminal.vercel.app/" className="keyterm">
+              Dune Terminal now open.
+            </a>
           </h4>
           {documents
             .sort((a, b) => new Date(b.date) - new Date(a.date))
             .map((document) => (
               <li key={document.id} className="document-item">
-                <p><strong>{document.genre} <span className="document-date">{document.date}</span></strong></p>
+                <p>
+                  <strong>
+                    {document.genre}{" "}
+                    <span className="document-date">{document.date}</span>
+                  </strong>
+                </p>
                 <img
                   src={document.imageURL}
                   alt={document.documentTitle}
