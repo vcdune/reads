@@ -37,8 +37,8 @@
   justify-content: center;
   list-style-type: none;
   padding: 0;
-  margin: 3% auto;
-  max-width: 1200px;
+  margin: 3% 8% 0% 8%;
+  max-width: 100%;
 }
 
 .document-item {
