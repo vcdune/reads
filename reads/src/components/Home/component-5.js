@@ -3,7 +3,7 @@ export default function Component5() {
     <div
       className="page-view"
       style={{
-        height: "130vh",
+        height: "200vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -20,46 +20,42 @@ export default function Component5() {
                 <span className="keyterm">whut</span> we made
               </h1>
               <br />
-              <h6>
+              <p>
                 <a href="https://dune-terminal.vercel.app/">Dune Terminal</a>
-              </h6>
+              </p>
               <p>
-                Share insights, spark discussions, and have your startup story
-                heard through our curated editorial space.
+                Have your startup story heard & work seen through our curated
+                editorial space.
               </p>
             </li>
             <li>
-              <h6>
+              <p>
                 <a href="">Job Board (wip)</a>
-              </h6>
-              <p>
-                Connect talent with opportunity through our Middle East-focused
-                startup job board.
               </p>
+              <p>Find talent through our MENA-based startup job board.</p>
             </li>
             <li>
-              <h6>
+              <p>
                 <a href="/community">Community (wip)</a>
-              </h6>
+              </p>
               <p>
-                A global network where MENA's founders, investors, and
-                changemakers convene to collaborate.
+                A network where MENA's founders, investors, and changemakers
+                convene to collaborate.
               </p>
             </li>
             <li>
-              <h6>
+              <p>
                 <a href="">Newsletter (wip)</a>
-              </h6>
+              </p>
               <p>
                 Stay ahead of the curve with our newsletter highlighting the
-                latest startup trends and founders to watch.
+                latest projects and founders to watch.
               </p>
-              <h6>
-                <a href="">Dune API (wip)</a>
-              </h6>
               <p>
-                An API for developers to access data on all the startups in the
-                Middle East.
+                <a href="">Dune API (wip)</a>
+              </p>
+              <p>
+                For developers to access data on the startups in the region.
               </p>
             </li>
           </ul>
@@ -68,8 +64,7 @@ export default function Component5() {
           <span className="keyterm">don't be shy, send a hello.</span>
         </p>
         <p>
-          Feel free to reach out to us at <strong>dunevc@gmail.com</strong> for
-          any inquiries or collaborations.
+          Feel free to reach out to us at <strong>dunevc@gmail.com</strong>.
         </p>
       </div>
     </div>

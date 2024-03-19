@@ -105,17 +105,15 @@
 
 .resource-list li {
   list-style-type: none;
-  /* font size */
 }
 .resource-list li a {
   list-style-type: none;
-  /* font size */
-  font-size: 38px;
+  font-size: 22px;
 }
 
 .resource-list {
   padding: 0;
-  margin: 5% 0 5% 0;
+  margin: 5%;
 }
 
 ul li a:hover::before {
