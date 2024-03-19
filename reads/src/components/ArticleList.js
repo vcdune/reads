@@ -34,23 +34,25 @@ export default function ArticleList() {
             Latest From Community.{" "}
             <a href="https://dune-terminal.vercel.app/" className="keyterm">Dune Terminal now open to everyone.</a>
           </h4>
-          {documents.map((document) => (
-            <li key={document.id} className="document-item">
-              <p className="keyterm">{document.genre}</p>
-              <img
-                src={document.imageURL}
-                alt={document.documentTitle}
-                className="document-image"
-              />
-              <div className="document-info">
-                <Link className="document-title" to={`/pages/${document.id}`}>
-                  <strong>{document.documentTitle}</strong>
-                </Link>
-                <p className="document-preview">{document.preview}</p>
-                <p className="document-date">{document.date}</p>
-              </div>
-            </li>
-          ))}
+          {documents
+            .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sort documents by date, newest to oldest
+            .map((document) => (
+              <li key={document.id} className="document-item">
+                <p className="keyterm">{document.genre}</p>
+                <img
+                  src={document.imageURL}
+                  alt={document.documentTitle}
+                  className="document-image"
+                />
+                <div className="document-info">
+                  <Link className="document-title" to={`/pages/${document.id}`}>
+                    <strong>{document.documentTitle}</strong>
+                  </Link>
+                  <p className="document-preview">{document.preview}</p>
+                  <p className="document-date">{document.date}</p>
+                </div>
+              </li>
+            ))}
         </ul>
       </div>
     </div>
