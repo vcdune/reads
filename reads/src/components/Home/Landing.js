@@ -1,4 +1,4 @@
-export default function GetStarted() {
+export default function Landing() {
   return (
     <>
       <div

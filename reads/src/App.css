@@ -105,6 +105,12 @@
 
 .resource-list li {
   list-style-type: none;
+  /* font size */
+}
+.resource-list li a {
+  list-style-type: none;
+  /* font size */
+  font-size: 38px;
 }
 
 .resource-list {

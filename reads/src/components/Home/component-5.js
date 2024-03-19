@@ -1,20 +1,19 @@
-export default function Ecosystem() {
+export default function Component5() {
   return (
-    <div className="page-view" style={{ backgroundColor: "white" }}>
-      <div
-        className="page-container"
-        style={{ backgroundColor: "white", marginTop: "0" }}
-      >
-        <h1>
-          <span className="">Think Startup. Think Dune.</span>
-        </h1>
-        <h1>
-          <span className="keyterm">
-            The platform for MENA's startup community
-          </span>
-        </h1>
-
-        <p>
+    <div
+      className="page-view"
+      style={{
+        height: "130vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        color: "white",
+        backgroundColor: "black",
+        marginBottom: "5%",
+      }}
+    >
+      <div className="page-container" style={{ marginBottom: "3%" }}>
+        <h3>
           <ul className="resource-list">
             <li>
               <h6>
@@ -27,7 +26,7 @@ export default function Ecosystem() {
             </li>
             <li>
               <h6>
-                <a href="">Dune //Job Board (wip)</a>
+                <a href="">Job Board (wip)</a>
               </h6>
               <p>
                 Connect talent with opportunity through our Middle East-focused
@@ -36,7 +35,7 @@ export default function Ecosystem() {
             </li>
             <li>
               <h6>
-                <a href="/community">Dune //Community (wip)</a>
+                <a href="/community">Community (wip)</a>
               </h6>
               <p>
                 A global network where MENA's founders, investors, and
@@ -45,7 +44,7 @@ export default function Ecosystem() {
             </li>
             <li>
               <h6>
-                <a href="">Dune //Newsletter (wip)</a>
+                <a href="">Newsletter (wip)</a>
               </h6>
               <p>
                 Stay ahead of the curve with our newsletter highlighting the
@@ -55,11 +54,12 @@ export default function Ecosystem() {
                 <a href="">Dune API (wip)</a>
               </h6>
               <p>
-                An API for developers to access data on all the startups in the Middle East.
+                An API for developers to access data on all the startups in the
+                Middle East.
               </p>
             </li>
           </ul>
-        </p>
+        </h3>
         <p>
           <span className="keyterm">don't be shy, send a hello.</span>
         </p>

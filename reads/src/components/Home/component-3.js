@@ -1,13 +1,23 @@
-export default function HomeMessage() {
+export default function Component3() {
   return (
     <div
       className="page-view"
-      style={{ backgroundColor: "#f1f4f7", marginBottom: "5%" }}
+      style={{
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        color: "black",
+        backgroundColor: "#f1f4f7",
+        marginBottom: "5%",
+      }}
     >
       <div className="page-container" style={{ marginBottom: "3%" }}>
-        <h1><a href="/pages/IlRxuneCzplHkSKrNYK0">
-          <span className="keyterm">a message from the team.</span>
-          </a></h1>
+        <h1>
+          <a href="/pages/IlRxuneCzplHkSKrNYK0">
+            <span className="keyterm">a message from the team :D</span>
+          </a>
+        </h1>
         <p style={{ lineHeight: "2" }}>
           <strong>We're the brains behind 'Project Dune' -</strong> a platform
           designed for the Middle East's entrepreneurial dreamers. Our mission

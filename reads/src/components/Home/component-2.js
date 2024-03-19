@@ -1,4 +1,4 @@
-export default function Stats() {
+export default function Component2() {
   return (
     <div
       className="page-view"
