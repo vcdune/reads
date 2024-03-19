@@ -16,17 +16,20 @@ export default function Component2() {
         style={{ width: "80%", maxWidth: "800px", textAlign: "center" }}
       >
         <h1>
-            <strong>
-            Oh, the places we'll go
+          <strong>
+            Oh, the places we'll <span className="keyterm">go</span>
             <br />
-            <br/>
+            <br />
             8,000+ readers,
             <br />
             100+ articles,
             <br />
             10+ startups,
-            <br />5+ universities,
-            <br />3+ VC Partners</strong>
+            <br />
+            5+ universities,
+            <br />
+            3+ VC Partners
+          </strong>
         </h1>
       </div>
     </div>

@@ -23,7 +23,7 @@ export default function Landing() {
           >
             <h1>Hello, Dune//C.</h1>
             <br />
-            the place where cool $h!t happens
+            the <span className="">oasis</span> where cool <span className="keyterm">$h!t</span> happens
           </h1>
           <p>
             <strong>

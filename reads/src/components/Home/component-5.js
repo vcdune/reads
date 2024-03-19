@@ -16,6 +16,10 @@ export default function Component5() {
         <h3>
           <ul className="resource-list">
             <li>
+              <h1 style={{ fontSize: "60px" }}>
+                <span className="keyterm">whut</span> we made
+              </h1>
+              <br />
               <h6>
                 <a href="https://dune-terminal.vercel.app/">Dune Terminal</a>
               </h6>
