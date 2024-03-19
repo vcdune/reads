@@ -32,13 +32,13 @@ export default function ArticleList() {
         <ul className="post">
           <h4 className="document-item">
             Latest From Community.{" "}
-            <a href="https://dune-terminal.vercel.app/" className="keyterm">Dune Terminal now open to everyone.</a>
+            <a href="https://dune-terminal.vercel.app/" className="keyterm">Dune Terminal now open.</a>
           </h4>
           {documents
-            .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sort documents by date, newest to oldest
+            .sort((a, b) => new Date(b.date) - new Date(a.date))
             .map((document) => (
               <li key={document.id} className="document-item">
-                <p className="keyterm">{document.genre}</p>
+                <p><strong>{document.genre} <span className="document-date">{document.date}</span></strong></p>
                 <img
                   src={document.imageURL}
                   alt={document.documentTitle}
@@ -49,7 +49,6 @@ export default function ArticleList() {
                     <strong>{document.documentTitle}</strong>
                   </Link>
                   <p className="document-preview">{document.preview}</p>
-                  <p className="document-date">{document.date}</p>
                 </div>
               </li>
             ))}
