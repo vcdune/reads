@@ -135,3 +135,13 @@ ul li a:hover::before {
   margin: 5% 0 5% 0;
   font-family: "Manrope", sans-serif;
 }
+
+.button-simple:hover {
+  background-color: rgb(18, 128, 218);
+  color: white;
+}
+
+.button-simple:active {
+  background-color: rgb(18, 218, 58);
+  color: white;
+}

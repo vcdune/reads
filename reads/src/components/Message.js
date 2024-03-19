@@ -25,7 +25,7 @@ export default function Message() {
           Feel free to reach out to us at <strong>dunevc@gmail.com</strong> for
           any inquiries or collaborations.
         </p>
-        <button onClick={handleEmailClick}>Reach Out</button>
+        <button onClick={handleEmailClick} className="button-simple">Send a heyo.</button>
       </div>
     </div>
   );
