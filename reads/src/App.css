@@ -122,3 +122,16 @@ ul li a:hover::before {
   text-decoration: underline;
   padding-right: 5px;
 }
+
+.button-simple {
+  background-color: #c981c9;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 5% 0 5% 0;
+  font-family: "Manrope", sans-serif;
+}
