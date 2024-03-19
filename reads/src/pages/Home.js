@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import GetStarted from "../components/GetStarted";
 import HomeMessage from "../components/HomeMessage";
+import Ecosystem from "../components/Ecosystem";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <GetStarted />
       <HomeMessage />
+      <Ecosystem />
       <Footer />
     </>
   );
