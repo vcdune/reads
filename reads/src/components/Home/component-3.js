@@ -24,14 +24,13 @@ export default function Component3() {
           is to create a platform for the region's startup ambitions.
         </p>
         <p style={{ lineHeight: "2" }}>
-          Unlock your potential with Project Dune - the launchpad for MENA's
-          entrepreneurial community. Embrace the future as we collectively shape
-          the region's startup revolution, one visionary mind at a time.
+          Thank you for being here as we collectively shape the region's startup
+          culture, one visionary mind at a time.
         </p>
         <p style={{ lineHeight: "2" }}>
           <strong>Project Dune is your startup community. </strong>
           It does not matter if you have founded a startup ($), are a student,
-          or just have an idea.{" "}
+          or just have an idea. Join on over!
         </p>
       </div>
     </div>
