@@ -116,7 +116,7 @@
   margin: 5%;
 }
 
-ul li a:hover::before {
+.hover-link a:hover::before {
   content: ">";
   color: rgb(18, 128, 218);
   text-decoration: underline;

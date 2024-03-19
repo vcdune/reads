@@ -14,7 +14,7 @@ export default function Component5() {
     >
       <div className="page-container" style={{ marginBottom: "3%" }}>
         <h3>
-          <ul className="resource-list">
+          <ul className="resource-list hover-link">
             <li>
               <h1 style={{ fontSize: "60px" }}>
                 <span className="keyterm">whut</span> we made

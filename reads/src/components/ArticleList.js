@@ -43,15 +43,17 @@ export default function ArticleList() {
                 <p>
                   <strong>
                     {document.genre}{" "}
-                    <span className="document-date">{document.date}</span>
+                    <span className="document-date"> · {document.date}</span>
                   </strong>
                 </p>
-                <img
-                  src={document.imageURL}
-                  alt={document.documentTitle}
-                  className="document-image"
-                />
-                <div className="document-info">
+                <Link Link to={`/pages/${document.id}`}>
+                  <img
+                    src={document.imageURL}
+                    alt={document.documentTitle}
+                    className="document-image"
+                  />
+                </Link>
+                <div className="document-info hover-link">
                   <Link className="document-title" to={`/pages/${document.id}`}>
                     <strong>{document.documentTitle}</strong>
                   </Link>
