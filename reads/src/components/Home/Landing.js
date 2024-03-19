@@ -21,9 +21,10 @@ export default function Landing() {
               paddingBottom: "1%",
             }}
           >
-            <h1 style={{fontSize: "100px"}}>VCDune.</h1>
+            <h1 style={{ fontSize: "100px" }}>VCDune.</h1>
             <br />
-            the <span className="">oasis</span> where cool <span className="keyterm">$h!t</span> happens
+            the <span className="">oasis</span> where cool{" "}
+            <span className="keyterm">$h!t</span> happens
           </h1>
           <p>
             <strong>
@@ -34,8 +35,10 @@ export default function Landing() {
               Built in a university dorm.
             </strong>
           </p>
-          <a href="/community" style={{ textDecoration: "none" }}>
-            <button style={{ cursor: "pointer" }} className="button-simple">Get Building</button>
+          <a href="/community-blog" style={{ textDecoration: "none" }}>
+            <button style={{ cursor: "pointer" }} className="button-simple">
+              Explore.
+            </button>
           </a>
         </div>
       </div>
