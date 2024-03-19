@@ -1,4 +1,8 @@
 export default function Message() {
+  const handleEmailClick = () => {
+    window.location.href = "mailto:dunevc@gmail.com";
+  };
+
   return (
     <div className="page-view">
       <div className="page-container">
@@ -18,9 +22,10 @@ export default function Message() {
           bounds.
         </p>
         <p>
-          Feel free to reach out to us at <strong>am13948@nyu.edu</strong> for
+          Feel free to reach out to us at <strong>dunevc@gmail.com</strong> for
           any inquiries or collaborations.
         </p>
+        <button onClick={handleEmailClick}>Reach Out</button>
       </div>
     </div>
   );

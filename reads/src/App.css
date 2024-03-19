@@ -71,16 +71,10 @@
   font-family: "Manrope", sans-serif;
 }
 
-.document-author {
-  color: #888888;
-  font-style: italic;
-  font-family: "Manrope", sans-serif;
-}
-
 .document-author,
 .document-preview,
 .document-date {
-  color: #888888;
+  color: #98a1b2;
   font-family: "Manrope", sans-serif;
 }
 

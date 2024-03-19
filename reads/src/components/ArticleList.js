@@ -31,8 +31,8 @@ export default function ArticleList() {
       <div className="documentList">
         <ul className="post">
           <h4 className="document-item">
-            The Latest from Project Dune.{" "}
-            <a href="https://dune-terminal.vercel.app/" className="keyterm">Dune Terminal is now open to everyone.</a>
+            Latest From Community.{" "}
+            <a href="https://dune-terminal.vercel.app/" className="keyterm">Dune Terminal now open to everyone.</a>
           </h4>
           {documents.map((document) => (
             <li key={document.id} className="document-item">
