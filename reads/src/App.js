@@ -34,8 +34,8 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/community" element={<Community />} />
+        <Route path="/community-blog" element={<Blog />} />
+        <Route path="/community-members" element={<Community />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/venture-capital" element={<VCapital />} />
         <Route path="/pages/:id" element={<ReadPage />} />
