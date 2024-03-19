@@ -8,7 +8,7 @@ export default function Header() {
         <li><a href="https://dune-terminal.vercel.app/" target="_blank" rel="noreferrer">Terminal</a></li>
         <li><a href="/community">Community</a></li>
         <li><a href="/">Newsletter</a></li>
-        <li><a href="https://twitter.com/abdulmendahawi" target="_blank" rel="noreferrer">Twitter</a></li>
+        <li><a href="https://twitter.com/vcdune" target="_blank" rel="noreferrer">Twitter</a></li>
         <li><a href="/contact">Contact</a></li>
         {/* <li><a href="">Log-In</a></li> */}
       </ul>
