@@ -5,9 +5,9 @@ export default function HomeMessage() {
       style={{ backgroundColor: "#f1f4f7", marginBottom: "5%" }}
     >
       <div className="page-container" style={{ marginBottom: "3%" }}>
-        <h1>
+        <h1><a href="/pages/IlRxuneCzplHkSKrNYK0">
           <span className="keyterm">a message from the team.</span>
-        </h1>
+          </a></h1>
         <p style={{ lineHeight: "2" }}>
           <strong>We're the brains behind 'Project Dune' -</strong> a platform
           designed for the Middle East's entrepreneurial dreamers. Our mission

@@ -1,47 +1,44 @@
 export default function GetStarted() {
   return (
-    <div
-      className="page-view"
-      style={{
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <>
       <div
-        className="page-container"
-        style={{ width: "80%", maxWidth: "800px", textAlign: "center" }}
+        className="page-view"
+        style={{
+          height: "90vh",
+          display: "flex",
+          justifyContent: "left",
+          alignItems: "left",
+          marginTop: "10%",
+        }}
       >
-        <h1
-          style={{
-            marginBottom: "3%",
-            paddingBottom: "1%",
-          }}
+        <div
+          className="page-container"
+          style={{ width: "80%", maxWidth: "800px", textAlign: "left" }}
         >
-          <span
+          <h1
             style={{
-              alignContent: "left",
-              animation: "glitch 1s linear infinite",
+              marginBottom: "3%",
+              paddingBottom: "1%",
             }}
-            className="keyterm"
           >
-            Dune//C
-          </span>
-          <br />
-          the place where cool $h!t happens
-        </h1>
-        <p>
-          <strong>
-            8,000+ readers,<br />
-            100+ articles,<br />
-            10+ startups, 5+ universities, 3+ VC
-          </strong>
-        </p>
-        <a href="/community" style={{ textDecoration: "none" }}>
-          <button style={{ cursor: "pointer" }}>Join the community</button>
-        </a>
+            <h1>Hello, Dune//C.</h1>
+            <br />
+            the place where cool $h!t happens
+          </h1>
+          <p>
+            <strong>
+              For MENA
+              <br />
+              by dreamers
+              <br />
+              Built in a university dorm.
+            </strong>
+          </p>
+          <a href="/community" style={{ textDecoration: "none" }}>
+            <button style={{ cursor: "pointer" }}>Get Building</button>
+          </a>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
