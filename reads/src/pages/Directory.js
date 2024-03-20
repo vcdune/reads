@@ -1,12 +1,12 @@
 import Header from "../components/header";
-import ArticleList from "../components/articleList";
+import StartupDirectory from "../components/directory/startupDirectory";
 import Footer from "../components/footer";
 
-export default function Blog() {
+export default function Directory() {
   return (
     <>
       <Header />
-      <ArticleList />
+      <StartupDirectory />
       <Footer />
     </>
   );

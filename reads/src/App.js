@@ -4,7 +4,7 @@ import Blog from "./pages/Blog";
 import ReadPage from "./pages/ReadPage";
 import Community from "./pages/Community";
 import Contact from "./pages/Contact";
-import VCapital from "./pages/VCapital";
+import Directory from "./pages/Directory";
 import "./App.css";
 //import bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -37,7 +37,7 @@ function App() {
         <Route path="/community-blog" element={<Blog />} />
         <Route path="/community-members" element={<Community />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/venture-capital" element={<VCapital />} />
+        <Route path="/directory" element={<Directory />} />
         <Route path="/pages/:id" element={<ReadPage />} />
         <Route path="*" element={<Home />} />
       </Routes>

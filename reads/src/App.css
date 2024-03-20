@@ -42,16 +42,16 @@
 }
 
 .document-item {
-  max-width: 600px; /* Adjust the maximum width of each document item */
+  max-width: 600px;
   margin: 10px;
   list-style-type: none;
 }
 
 .document-image {
-  width: 100%; /* Set width to 100% to fill the container */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 100%; /* Ensure image does not exceed its container's width */
-  max-height: 330px; /* Set a maximum height for the image */
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 330px;
   border-radius: 10px;
   object-fit: cover;
   margin-bottom: 2%;
@@ -86,7 +86,7 @@
 .page-container {
   max-width: 700px;
   width: 100%;
-  margin: 2% 3% 5% 5%;
+  margin: 2% 5% 5% 5%;
   font-family: "Manrope", sans-serif;
   /* top, right, bottom, left */
 }
@@ -144,4 +144,46 @@
 .button-simple:active {
   background-color: rgb(18, 218, 58);
   color: white;
+}
+
+/* DIRECTORY */
+.directory-container {
+  margin: 3% 15%;
+  font-family: "Manrope", sans-serif;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.startup-list {
+  display: grid;
+  gap: 20px;
+}
+
+.startup-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.startup-logo {
+  width: 70px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.startup-info {
+  margin-top: 10px;
+}
+
+.view-details-link {
+  display: block;
+  margin-top: 10px;
 }

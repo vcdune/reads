@@ -1,10 +1,10 @@
-import Header from "../components/Header";
-import Landing from "../components/Home/Landing";
-import Component2 from "../components/Home/component-2";
-import Component3 from "../components/Home/component-3";
-import Component4 from "../components/Home/component-4";
-import Component5 from "../components/Home/component-5";
-import Footer from "../components/Footer";
+import Header from "../components/header";
+import Landing from "../components/home/landing";
+import Component2 from "../components/home/component-2";
+import Component3 from "../components/home/component-3";
+import Component4 from "../components/home/component-4";
+import Component5 from "../components/home/component-5";
+import Footer from "../components/footer";
 
 export default function Home() {
   return (
