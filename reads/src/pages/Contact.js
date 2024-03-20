@@ -1,6 +1,6 @@
-import Header from "../components/header";
-import Message from "../components/message";
-import Footer from "../components/footer";
+import Header from "../components/Header";
+import Message from "../components/Message";
+import Footer from "../components/Footer";
 
 export default function Contact() {
   return (

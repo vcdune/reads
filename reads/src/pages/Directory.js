@@ -1,6 +1,6 @@
-import Header from "../components/header";
+import Header from "../components/Header";
 import StartupDirectory from "../components/directory/startupDirectory";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 
 export default function Directory() {
   return (
