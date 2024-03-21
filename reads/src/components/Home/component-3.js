@@ -28,9 +28,11 @@ export default function Component3() {
           culture, one visionary mind at a time.
         </p>
         <p style={{ lineHeight: "2", fontSize: "22px" }}>
-          <strong>Project Dune is your startup community. </strong>
-          It does not matter if you have founded a startup ($), are a student,
-          or just have an idea. Join on over!
+          <strong>Disclaimer:</strong>{" "}
+          <em>
+            Project Dune is a community built for the 'crazy ones', the
+            'misfits', and the 'rebels'.
+          </em>
         </p>
       </div>
     </div>

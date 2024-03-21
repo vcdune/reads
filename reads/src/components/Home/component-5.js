@@ -61,7 +61,7 @@ export default function Component5() {
                 <a href="">Dune API (wip)</a>
               </p>
               <p>
-                For developers to access data on the startups in the region.
+                For developers to access data on startups in the region.
               </p>
             </li>
           </ul>
