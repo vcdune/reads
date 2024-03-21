@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <nav className="header hover-link">
       <ul className="nav">
-        <li><a href="/home"><strong>Project Dune</strong></a></li>
+        <li><a href="/home"><strong>VCDune</strong></a></li>
         <li><a href="/community-blog">Community</a></li>
         <li><a href="/community-members">Members</a></li>
         <li><a href="/directory">Directory</a></li>
