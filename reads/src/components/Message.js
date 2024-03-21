@@ -21,18 +21,25 @@ export default function Message() {
           Dune - where curiosity meets innovation, and knowledge knows no
           bounds.
         </p>
-        <a href="https://twitter.com/vcdune" target="_blank" rel="noreferrer">
-          Our Twitter
-        </a>
-        <br />
-        <br />
         <p>
-          Reach out to us at <strong>dunevc@gmail.com</strong> for
-          any inquiries or collaborations.
+          Reach out to us at <strong>dunevc@gmail.com</strong> for any inquiries
+          or collaborations.
         </p>
         <button onClick={handleEmailClick} className="button-simple">
           Send a heyo.
         </button>
+        <br />
+        <a href="https://twitter.com/vcdune" target="_blank" rel="noreferrer">
+          Our Twitter
+        </a>
+        <br />
+        <a
+          href="https://mailchi.mp/c50285f251ea/dune"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Stay Updated
+        </a>
       </div>
     </div>
   );

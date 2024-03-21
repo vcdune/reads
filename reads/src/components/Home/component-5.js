@@ -21,31 +21,37 @@ export default function Component5() {
               </h1>
               <br />
               <p>
-                <a href="https://dune-terminal.vercel.app/">Dune Terminal</a>
+                <a href="/community-blog">Dune Editorial Space</a>
               </p>
               <p>
-                Have your startup story heard & work seen through our curated
-                editorial space.
+                Got a product to unveil? A startup tale to share? Our editorial
+                space is your megaphone.
               </p>
+            </li>
+            <li>
+              <p>
+                <a href="/directory">Startup Directory</a>
+              </p>
+              <p>Get to know the latest startups in the Middle-East.</p>
             </li>
             <li>
               <p>
                 <a href="">Job Board (wip)</a>
               </p>
-              <p>Find talent through our MENA-based startup job board.</p>
+              <p>Find & hire talent through our MENA-based job board.</p>
             </li>
             <li>
               <p>
                 <a href="/community">Community (wip)</a>
               </p>
               <p>
-                A network where MENA's founders, investors, and changemakers
-                convene to collaborate.
+                A network to connect with MENA's founders, investors, and
+                changemakers.
               </p>
             </li>
             <li>
               <p>
-                <a href="">Newsletter (wip)</a>
+                <a href="https://mailchi.mp/c50285f251ea/dune">Newsletter (wip)</a>
               </p>
               <p>
                 Stay ahead of the curve with our newsletter highlighting the

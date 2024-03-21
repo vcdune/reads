@@ -38,10 +38,10 @@ export default function Directory() {
   return (
     <div className="directory-container">
       <strong>
-        <p>VCDune directory list</p>
+        <p>Middle-East Directory List</p>
       </strong>
       <p>
-        Startups are constantly being added, contact{" "}
+        Startups constantly being added, contact{" "}
         <strong>dunevc@gmail.com</strong>.
       </p>
       <input
