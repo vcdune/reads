@@ -2,6 +2,7 @@
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import ReadPage from "./pages/ReadPage";
+import Jobs from "./pages/Jobs";
 import Community from "./pages/Community";
 import Contact from "./pages/Contact";
 import Directory from "./pages/Directory";
@@ -37,6 +38,7 @@ function App() {
         <Route path="/community-blog" element={<Blog />} />
         <Route path="/community-members" element={<Community />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/job-board" element={<Jobs />} />
         <Route path="/directory" element={<Directory />} />
         <Route path="/pages/:id" element={<ReadPage />} />
         <Route path="*" element={<Home />} />

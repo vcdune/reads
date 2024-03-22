@@ -187,3 +187,9 @@
   display: block;
   margin-top: 10px;
 }
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
