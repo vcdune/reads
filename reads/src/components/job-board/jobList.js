@@ -105,7 +105,7 @@ export default function Directory() {
                 </p>
                 <p style={{ color: "grayText" }}>{startup.location}</p>
                 <Link
-                  to={`/startup/${startup.id}`}
+                  to={`/job/${startup.id}`}
                   className="view-details-link"
                 >
                   View Details

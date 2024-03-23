@@ -6,6 +6,9 @@ import Jobs from "./pages/Jobs";
 import Community from "./pages/Community";
 import Contact from "./pages/Contact";
 import Directory from "./pages/Directory";
+import Details from "./pages/Details";
+import TextEditor from "./pages/TextEditor";
+
 import "./App.css";
 //import bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -40,7 +43,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/job-board" element={<Jobs />} />
         <Route path="/directory" element={<Directory />} />
+        <Route path="/editor" element={<TextEditor />} />
         <Route path="/pages/:id" element={<ReadPage />} />
+        <Route path="/job/:id" element={<Details />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>

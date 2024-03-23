@@ -40,10 +40,7 @@ export default function ArticleList() {
         <div className="documentList">
           <ul className="post">
             <h4 className="document-item">
-              Community Latest.{" "}
-              <a href="https://dune-terminal.vercel.app/" className="keyterm">
-                Dune Terminal now open.
-              </a>
+              Latest.
             </h4>
             {documents
               .sort((a, b) => new Date(b.date) - new Date(a.date))
