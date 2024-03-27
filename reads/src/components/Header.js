@@ -10,22 +10,28 @@ export default function Header() {
         <li>
           <a href="/community-blog">Community</a>
         </li>
-        <li>
+        {/* <li>
           <a href="/community-members">Members</a>
-        </li>
+        </li> */}
         <li>
           <a href="/directory">Directory</a>
         </li>
         {/* <li><a href="https://dune-terminal.vercel.app/" target="_blank" rel="noreferrer">Terminal</a></li> */}
         {/* <li><a href="/">Newsletter</a></li> */}
         {/* <li><a href="https://twitter.com/vcdune" target="_blank" rel="noreferrer">Twitter</a></li> */}
-        <li>
+        {/* <li>
           <a href="/contact">Contact</a>
+        </li> */}
+        <li>
+          <a href="/job-board">Jobs</a>
         </li>
         <li>
           <a href="/editor">Publish</a>
         </li>
         {/* <li><a href="">Log-In</a></li> */}
+        <li>
+          <a href="/register">Login</a>
+        </li>
       </ul>
     </nav>
   );

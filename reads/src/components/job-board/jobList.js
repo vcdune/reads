@@ -51,6 +51,7 @@ export default function Directory() {
         <strong>
           NEW: jobs added on rolling basis. To have your roles featured
           <button
+            onClick={() => (window.location.href = "mailto:dunevc@gmail.com")}
             style={{
               backgroundColor: "white",
               color: "rgb(95, 61, 196)",
@@ -104,10 +105,7 @@ export default function Directory() {
                   </span>
                 </p>
                 <p style={{ color: "grayText" }}>{startup.location}</p>
-                <Link
-                  to={`/job/${startup.id}`}
-                  className="view-details-link"
-                >
+                <Link to={`/job/${startup.id}`} className="view-details-link">
                   View Details
                 </Link>
               </div>

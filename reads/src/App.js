@@ -1,5 +1,6 @@
 // Pages
 import Home from "./pages/Home";
+import Register from "./pages/Register";
 import Blog from "./pages/Blog";
 import ReadPage from "./pages/ReadPage";
 import Jobs from "./pages/Jobs";
@@ -38,6 +39,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/community-blog" element={<Blog />} />
         <Route path="/community-members" element={<Community />} />
         <Route path="/contact" element={<Contact />} />

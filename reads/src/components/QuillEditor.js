@@ -86,10 +86,10 @@ const QuillEditor = ({ content }) => {
 
   return (
     <div div style={{ maxWidth: "1250px", margin: "auto", padding: "20px" }}>
-      <div class="input-group mb-3" style={{maxWidth: "100%"}}>
-        <a class="btn btn-dark" type="button" id="button-addon2" href="/home">
+      <div class="input-group mb-3" style={{ maxWidth: "100%" }}>
+        {/* <a class="btn btn-dark" type="button" id="button-addon2" href="/home">
           ↩
-        </a>
+        </a> */}
         <input
           type="text"
           className="form-control"
@@ -99,7 +99,7 @@ const QuillEditor = ({ content }) => {
           onChange={(e) => setDocumentTitle(e.target.value)}
         />
         <button
-          class="btn btn-primary"
+          className="btn btn-dark"
           type="button"
           id="button-addon2"
           onClick={saveToFirebase}

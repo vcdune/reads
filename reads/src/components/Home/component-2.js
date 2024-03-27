@@ -20,15 +20,15 @@ export default function Component2() {
             Oh, the places we'll <span className="keyterm">go</span>
             <br />
             <br />
-            8,000+ readers,
+            8,000+ users,
             <br />
-            100+ articles,
+            100+ posts,
             <br />
             10+ startups,
             <br />
             5+ universities,
             <br />
-            3+ VC Partners
+            3+ VC Partners.
           </strong>
         </h1>
       </div>

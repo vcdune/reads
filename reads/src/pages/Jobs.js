@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 export default function Jobs() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <JobList />
       <Footer />
     </>
