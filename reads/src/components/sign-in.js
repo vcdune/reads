@@ -7,13 +7,14 @@ export default function SignUp() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
 
-  const handleRegister = async () => {
+  const handleSignin = async () => {
     try {
-      await firebase.auth().createUserWithEmailAndPassword(username, password);
-      console.log("User created");
+      await firebase.auth().signInWithEmailAndPassword(username, password);
+      console.log("Signed in");
+      window.location.href = "/home";
     } catch (error) {
       setError(error.message);
-      console.error(error.message);
+      console.error("Error signing in:", error.message);
     }
   };
   return (
@@ -33,7 +34,7 @@ export default function SignUp() {
         onChange={(e) => setPassword(e.target.value)}
       />
       <br/>
-      <button onClick={handleRegister}>Create Account</button>
+      <button onClick={handleSignin}>Sign-in</button>
       {error && <p style={{ color: "red" }}>{error}</p>}
       <br/>
       <p>Already have an account? <a href="/sign-in">Sign in</a></p>

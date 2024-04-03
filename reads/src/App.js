@@ -1,6 +1,7 @@
 // Pages
 import Home from "./pages/Home";
 import Register from "./pages/Register";
+import SignIn from "./pages/Sign-in";
 import Blog from "./pages/Blog";
 import ReadPage from "./pages/ReadPage";
 import Jobs from "./pages/Jobs";
@@ -40,6 +41,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/sign-in" element={<SignIn />} />
         <Route path="/community-blog" element={<Blog />} />
         <Route path="/community-members" element={<Community />} />
         <Route path="/contact" element={<Contact />} />
