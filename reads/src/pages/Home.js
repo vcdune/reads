@@ -11,10 +11,10 @@ export default function Home() {
     <>
       <Header />
       <Landing />
-      <Component2 />
+      {/* <Component2 /> */}
       <Component3 />
-      <Component4 />
-      <Component5 />
+      {/* <Component4 /> */}
+      {/* <Component5 /> */}
       <Footer />
     </>
   );

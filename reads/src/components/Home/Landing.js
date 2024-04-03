@@ -21,10 +21,10 @@ export default function Landing() {
               paddingBottom: "1%",
             }}
           >
-            <h1 style={{ fontSize: "100px" }}>VCDune.</h1>
+            <h1 style={{ fontSize: "100px" }}>Dune.</h1>
             <br />
-            the <span className="">oasis</span> where cool{" "}
-            <span className="keyterm">$h!t</span> happens
+            the publishing platform for{" "}
+            <span className="keyterm">MENA</span>.
           </h1>
           <p>
             <strong>

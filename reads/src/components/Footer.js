@@ -33,7 +33,7 @@ export default function Footer() {
             </a>
           </li>
         </ul>
-        <p class="text-center text-muted">Dune//C © 2024</p>
+        <p class="text-center text-muted">Dune © 2024</p>
       </footer>
     </div>
   );
