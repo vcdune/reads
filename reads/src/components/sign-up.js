@@ -18,7 +18,7 @@ export default function SignUp() {
   };
   return (
     <div className="sign-up">
-      <p>Join Dune.</p>
+      <p>Welcome to Dune.</p>
       <input
         type="text"
         placeholder="Email"

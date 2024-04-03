@@ -30,7 +30,7 @@ export default function Header() {
         </li>
         {/* <li><a href="">Log-In</a></li> */}
         <li>
-          <a href="/register">Profile</a>
+          <a href="/sign-in">Profile</a>
         </li>
       </ul>
     </nav>
