@@ -20,13 +20,14 @@
 
 .nav a {
   text-decoration: none;
-  color: #223037;
+  color: #858383;
   font-weight: 600;
   font-family: "Manrope", sans-serif;
 }
 
 .nav a:hover {
-  font-weight: bold;
+  /* font-weight: bold; */
+  color: black;
 }
 
 /* DOCUMENT LIST */
@@ -98,7 +99,7 @@
 }
 
 .keyterm {
-  color: #688d68;
+  color: rgb(186, 187, 255);
   font-weight: bold;
 }
 
@@ -115,33 +116,36 @@
   margin: 5%;
 }
 
-.hover-link a:hover::before {
+/* .hover-link a:hover::before {
   content: ">";
-  color: rgb(18, 128, 218);
+  color: rgb(186, 187, 255);
   text-decoration: underline;
   padding-right: 5px;
-}
+} */
 
 .button-simple {
-  background-color: #688d68;
+  background-color: rgb(100, 54, 236);
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  border-radius: 5px;
-  margin: 5% 0 5% 0;
+  font-size: 18px;
+  border-radius: 8px;
+  margin: 5% 0;
   font-family: "Manrope", sans-serif;
+  border: 3px black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .button-simple:hover {
-  background-color: rgb(18, 128, 218);
+  background-color: rgb(80, 34, 216);
   color: white;
 }
 
 .button-simple:active {
-  background-color: rgb(18, 218, 58);
+  background-color: #688d68;
   color: white;
 }
 

@@ -34,7 +34,7 @@ export default function ArticleList() {
     <div>
       {loading ? (
         <div className="loading-spinner">
-          <ClipLoader color={"#688d68"} loading={loading} css={override} size={50} />
+          <ClipLoader color={"black"} loading={loading} css={override} size={50} />
         </div>
       ) : (
         <div className="documentList">

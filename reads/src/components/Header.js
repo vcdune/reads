@@ -4,7 +4,7 @@ export default function Header() {
       <ul className="nav">
         <li>
           <a href="/home">
-            <strong>Dune</strong>
+            <strong>Kitaab</strong>
           </a>
         </li>
         <li>
