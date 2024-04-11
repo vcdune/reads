@@ -10,6 +10,7 @@ import Welcome from "./pages/Welcome";
 import Home from "./pages/Home";
 import SignIn from "./pages/Sign-in";
 import Blog from "./pages/Blog";
+import Profile from "./pages/Profile";
 import ReadPage from "./pages/ReadPage";
 import TextEditor from "./pages/TextEditor";
 
@@ -53,6 +54,10 @@ function App() {
           <Route
             path="/editor"
             element={user ? <TextEditor /> : <Navigate to="/" />}
+          />
+          <Route
+            path="/profile"
+            element={user ? <Profile /> : <Navigate to="/" />}
           />
           <Route path="/pages/:id" element={<ReadPage />} />
           <Route path="*" element={<Navigate to="/" />} />

@@ -30,7 +30,7 @@ export default function Header() {
           <a href="/editor">Publish</a>
         </li>
         <li>
-          <a href="/sign-in">Profile</a>
+          <a href="/profile">Profile</a>
         </li>
       </ul>
     </nav>
