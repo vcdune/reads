@@ -3,42 +3,27 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 
 export default function ProfileDash() {
-  const [username, setUsername] = useState("");
-
-  useEffect(() => {
-    const fetchUsername = async () => {
-      try {
-        const user = firebase.auth().currentUser;
-        if (user) {
-          setUsername(user.displayName);
-        } else {
-          setUsername("Guest");
-        }
-      } catch (error) {
-        console.error("Error fetching username:", error.message);
-      }
-    };
-
-    fetchUsername();
-
-    return () => setUsername("");
-  }, []);
+  const user = firebase.auth().currentUser;
 
   const handleSignOut = () => {
-    firebase.auth().signOut().then(() => {
-      setUsername("Guest");
-    }).catch((error) => {
-      console.error("Error signing out:", error.message);
-    });
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {})
+      .catch((error) => {
+        console.error("Error signing out:", error.message);
+      });
   };
 
   return (
-    <div className="page-view">
-      <div className="page-container">
-        <p>
-          <strong>Hello there, {username}.</strong>
-        </p>
-        <button onClick={handleSignOut}>Sign Out</button>
+    <div className="">
+      <div className="profile-container">
+        <img src={user.photoURL} alt={user.displayName} />
+        <h3>{user.displayName}</h3>
+        <p>A random and not-so-stupid bio.</p>
+        <button onClick={handleSignOut} className="btn btn-dark btn-sm">
+          Sign Out
+        </button>
       </div>
     </div>
   );

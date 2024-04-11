@@ -107,7 +107,7 @@ const QuillEditor = ({ content }) => {
       <div
         ref={editorRef}
         style={{
-          width: "100%",
+          maxWidth: "100%", // Adjusted maxWidth property
           height: "100%",
           border: "1px solid #ccc",
           borderRadius: "5px",
