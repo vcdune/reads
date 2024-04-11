@@ -104,6 +104,10 @@
   color: black;
 }
 
+.minimal a:hover {
+    color: #00a071 !important;
+  } /* Added closing curly brace */
+
 /* DOCUMENT LIST */
 .documentList {
   display: flex;
