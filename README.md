@@ -1,4 +1,4 @@
-# Kitaab, a Medium Alternative
+# <a href="https://bit.ly/vcdune">Kitaab<a/>, a Medium Alternative
 
 Welcome, Kitaab is a publishing platform designed as an alternative to Medium.com. Unlike Medium, there are no restrictions on the number of writings users can read, promoting a more open environment for sharing and exploring content. Additionally, their are no current publishing platforms that present user writing in a pleasing way, Kitaab aims to solve that.
 
