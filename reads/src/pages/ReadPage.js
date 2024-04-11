@@ -5,6 +5,7 @@ import "firebase/compat/firestore";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import MinimalHeader from "../components/MinimalHeader";
 
 const DocumentView = () => {
   const { id } = useParams();
@@ -32,7 +33,7 @@ const DocumentView = () => {
 
   return (
     <>
-      <Header />
+      <MinimalHeader />
       <div className="page-view">
         <div className="page-container">
           {documentData ? (

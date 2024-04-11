@@ -175,7 +175,7 @@
 }
 
 .page-title {
-  font-size: 24px;
+  font-size: clamp(3rem, 1.2394366197rem + 3.6948356808vw, 5rem);
   font-weight: bold;
   margin: 10% 0 10% 0;
   text-align: center;

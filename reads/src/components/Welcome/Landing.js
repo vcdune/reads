@@ -34,8 +34,8 @@ export default function Landing() {
             >
               <h1 style={{ fontSize: "100px" }}>Kitaab.</h1>
               <br />
-              the publishing platform for{" "}
-              <span className="keyterm">MENA</span>.
+              the writing platform that looks{" "}
+              <span className="keyterm">good</span>.
             </h1>
             <p>
               <strong>
