@@ -4,7 +4,6 @@ import SignIn from "../components/sign-in";
 export default function Register() {
   return (
     <>
-      <Header />
       <SignIn />
     </>
   );

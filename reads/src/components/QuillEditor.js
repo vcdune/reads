@@ -50,32 +50,45 @@ const QuillEditor = ({ content }) => {
 
   const saveToFirebase = async () => {
     const content = quillInstance.current?.root.innerHTML;
-    const userID = firebase.auth().currentUser.uid;
-
+    const user = firebase.auth().currentUser;
+  
+    if (!user) {
+      console.warn("User not logged in. Content not saved.");
+      return;
+    }
+  
+    const userID = user.uid;
+  
     if (content && documentTitle.trim() !== "") {
       const db = firebase.firestore();
-      const user = firebase.auth().currentUser;
-
-      if (user) {
-        const displayName = user.displayName || "Anonymous";
-        const currentDate = new Date().toLocaleDateString();
-
-        const editorContentRef = db.collection("editorContent").doc();
-
-        await editorContentRef.set({
-          userID,
-          author: displayName,
-          documentTitle,
-          // documentSlug,
-          content,
-          date: currentDate,
-        });
-
-        console.log("Content saved to Firebase successfully");
-        window.location.href = "/home";
-      } else {
-        console.warn("User not logged in. Content not saved.");
-      }
+      const displayName = user.displayName || "Anonymous";
+      const currentDate = new Date().toLocaleDateString();
+  
+      // Get the file input element
+      const fileInput = document.getElementById("formFile");
+      const file = fileInput.files[0];
+  
+      // Reference to Firebase Storage
+      const storageRef = firebase.storage().ref();
+  
+      // Upload the file to Firebase Storage
+      const fileSnapshot = await storageRef.child(`${userID}/${file.name}`).put(file);
+      const fileURL = await fileSnapshot.ref.getDownloadURL();
+  
+      // Save document content to Firestore
+      const editorContentRef = db.collection("editorContent").doc();
+  
+      await editorContentRef.set({
+        userID,
+        author: displayName,
+        documentTitle,
+        thumbnailURL: fileURL,
+        content,
+        date: currentDate,
+      });
+  
+      console.log("Content saved to Firebase successfully");
+      window.location.href = "/home";
     } else {
       console.warn("Content or document title is empty. Nothing to save.");
       window.confirm(

@@ -1,4 +1,20 @@
+import React, { useState, useEffect } from "react";
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+
 export default function Header() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const unsubscribe = firebase.auth().onAuthStateChanged((currentUser) => {
+      setUser(currentUser);
+    });
+
+    return () => {
+      unsubscribe();
+    };
+  }, []);
+
   return (
     <nav className="header hover-link">
       <ul className="nav">
@@ -10,25 +26,9 @@ export default function Header() {
         <li>
           <a href="/community-blog">Community</a>
         </li>
-        {/* <li>
-          <a href="/community-members">Members</a>
-        </li> */}
-        {/* <li>
-          <a href="/directory">Directory</a>
-        </li> */}
-        {/* <li><a href="https://dune-terminal.vercel.app/" target="_blank" rel="noreferrer">Terminal</a></li> */}
-        {/* <li><a href="/">Newsletter</a></li> */}
-        {/* <li><a href="https://twitter.com/vcdune" target="_blank" rel="noreferrer">Twitter</a></li> */}
-        {/* <li>
-          <a href="/contact">Contact</a>
-        </li> */}
-        {/* <li>
-          <a href="/job-board">Jobs</a>
-        </li> */}
         <li>
           <a href="/editor">Publish</a>
         </li>
-        {/* <li><a href="">Log-In</a></li> */}
         <li>
           <a href="/sign-in">Profile</a>
         </li>

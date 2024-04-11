@@ -7,20 +7,19 @@ import { ClipLoader } from "react-spinners";
 
 export default function ArticleList() {
   const [documents, setDocuments] = useState([]);
-  const [loading, setLoading] = useState(true); // State variable to track loading
+  const [loading, setLoading] = useState(true);
+  const [searchQuery, setSearchQuery] = useState(""); // State variable for search query
   const db = firebase.firestore();
 
   const fetchDocuments = async () => {
     try {
       const querySnapshot = await db.collection("editorContent").get();
-
       const documentsData = querySnapshot.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),
       }));
-
       setDocuments(documentsData);
-      setLoading(false); // Set loading to false once documents are fetched
+      setLoading(false);
     } catch (error) {
       console.error("Error fetching documents:", error);
     }
@@ -30,19 +29,36 @@ export default function ArticleList() {
     fetchDocuments();
   }, []);
 
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const filteredDocuments = documents.filter((document) =>
+    document.documentTitle.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div>
       {loading ? (
         <div className="loading-spinner">
-          <ClipLoader color={"black"} loading={loading} css={override} size={50} />
+          <ClipLoader
+            color={"black"}
+            loading={loading}
+            css={override}
+            size={50}
+          />
         </div>
       ) : (
         <div className="documentList">
           <ul className="post">
-            <h4 className="document-item">
-              Latest.
-            </h4>
-            {documents
+            <input
+              type="text"
+              placeholder="Search articles..."
+              value={searchQuery}
+              onChange={handleSearchChange}
+            />
+            <h4 className="document-item">Latest.</h4>
+            {filteredDocuments
               .sort((a, b) => new Date(b.date) - new Date(a.date))
               .map((document) => (
                 <li key={document.id} className="document-item">

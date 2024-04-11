@@ -1,58 +1,63 @@
-// Pages
+import React, { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import firebaseConfig from "./components/firebaseConfig";
+
+// Import pages
+import Welcome from "./pages/Welcome";
 import Home from "./pages/Home";
-import Register from "./pages/Register";
 import SignIn from "./pages/Sign-in";
 import Blog from "./pages/Blog";
 import ReadPage from "./pages/ReadPage";
-import Jobs from "./pages/Jobs";
-import Community from "./pages/Community";
-import Contact from "./pages/Contact";
-import Directory from "./pages/Directory";
-import Details from "./pages/Details";
 import TextEditor from "./pages/TextEditor";
 
+// Import CSS
 import "./App.css";
-//import bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-
-// Firebase
-import firebase from "firebase/compat/app";
-import "firebase/compat/firestore";
-import "firebase/compat/auth";
-import { useState } from "react";
-import { useAuthState } from "react-firebase-hooks/auth";
-
-firebase.initializeApp({
-  apiKey: "AIzaSyCjlP_icdXnh6DbIemKIp4M7xWMkvatgKA",
-  authDomain: "omilia-f0b42.firebaseapp.com",
-  projectId: "omilia-f0b42",
-  storageBucket: "omilia-f0b42.appspot.com",
-  messagingSenderId: "11465010307",
-  appId: "1:11465010307:web:78a4221e498bfea2af7fb6",
-  measurementId: "G-8FWM5P1VDC",
-});
+// Initialize Firebase
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+}
 
 function App() {
+  const [user, loading] = useAuthState(firebase.auth());
+  const [authLoaded, setAuthLoaded] = useState(false);
+
+  useEffect(() => {
+    if (!loading) {
+      setAuthLoaded(true);
+    }
+  }, [loading]);
+
+  if (!authLoaded) {
+    return null; // Render nothing until authentication state is fully loaded
+  }
+
   return (
     <>
       <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/sign-in" element={<SignIn />} />
-        <Route path="/community-blog" element={<Blog />} />
-        <Route path="/community-members" element={<Community />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/job-board" element={<Jobs />} />
-        <Route path="/directory" element={<Directory />} />
-        <Route path="/editor" element={<TextEditor />} />
-        <Route path="/pages/:id" element={<ReadPage />} />
-        <Route path="/job/:id" element={<Details />} />
-        <Route path="*" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={user ? <Navigate to="/home" /> : <Welcome />}
+          />
+          <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/home" element={user ? <Home /> : <Navigate to="/" />} />
+          <Route
+            path="/community-blog"
+            element={user ? <Blog /> : <Navigate to="/" />}
+          />
+          <Route
+            path="/editor"
+            element={user ? <TextEditor /> : <Navigate to="/" />}
+          />
+          <Route path="/pages/:id" element={<ReadPage />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

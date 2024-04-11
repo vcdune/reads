@@ -46,7 +46,7 @@ export default function Landing() {
                 {/* Built in a university dorm. */}
               </strong>
             </p>
-            <a href="/community-blog" style={{ textDecoration: "none" }}>
+            <a href="/sign-in" style={{ textDecoration: "none" }}>
               <button style={{ cursor: "pointer" }} className="button-simple">
                 Start Writing.
               </button>
