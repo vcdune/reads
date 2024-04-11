@@ -64,16 +64,17 @@ export default function ArticleList() {
                 <li key={document.id} className="document-item">
                   <p>
                     <strong>
-                      {document.genre}{" "}
-                      <span className="document-date"> · {document.date}</span>
+                      <span className="document-date">{document.date}</span>
                     </strong>
                   </p>
                   <Link Link to={`/pages/${document.id}`}>
-                    <img
-                      src={document.imageURL}
-                      alt={document.documentTitle}
-                      className="document-image"
-                    />
+                    {document.imageURL && ( // Conditionally render image if imageURL exists
+                      <img
+                        src={document.imageURL}
+                        alt={document.documentTitle}
+                        className="document-image"
+                      />
+                    )}
                   </Link>
                   <div className="document-info hover-link">
                     <Link
