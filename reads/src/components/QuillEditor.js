@@ -1,15 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import "quill/dist/quill.snow.css";
 import Quill from "quill";
-import "firebase/compat/firestore";
 import firebase from "firebase/compat/app";
+import "firebase/compat/firestore";
 import firebaseConfig from "./firebaseConfig";
 
 const QuillEditor = ({ content }) => {
   const editorRef = useRef(null);
   const quillInstance = useRef(null);
   const [documentTitle, setDocumentTitle] = useState("");
-  // const [documentSlug, setDocumentSlug] = useState("");
 
   useEffect(() => {
     if (!firebase.apps.length) {
@@ -51,42 +50,30 @@ const QuillEditor = ({ content }) => {
   const saveToFirebase = async () => {
     const content = quillInstance.current?.root.innerHTML;
     const user = firebase.auth().currentUser;
-  
+
     if (!user) {
       console.warn("User not logged in. Content not saved.");
       return;
     }
-  
+
     const userID = user.uid;
-  
+
     if (content && documentTitle.trim() !== "") {
       const db = firebase.firestore();
       const displayName = user.displayName || "Anonymous";
       const currentDate = new Date().toLocaleDateString();
-  
-      // Get the file input element
-      const fileInput = document.getElementById("formFile");
-      const file = fileInput.files[0];
-  
-      // Reference to Firebase Storage
-      const storageRef = firebase.storage().ref();
-  
-      // Upload the file to Firebase Storage
-      const fileSnapshot = await storageRef.child(`${userID}/${file.name}`).put(file);
-      const fileURL = await fileSnapshot.ref.getDownloadURL();
-  
+
       // Save document content to Firestore
       const editorContentRef = db.collection("editorContent").doc();
-  
+
       await editorContentRef.set({
         userID,
         author: displayName,
-        documentTitle,
-        thumbnailURL: fileURL,
+        documentTitle, // Include the document title
         content,
         date: currentDate,
       });
-  
+
       console.log("Content saved to Firebase successfully");
       window.location.href = "/home";
     } else {
@@ -98,11 +85,8 @@ const QuillEditor = ({ content }) => {
   };
 
   return (
-    <div div style={{ maxWidth: "1250px", margin: "auto", padding: "20px" }}>
-      <div class="input-group mb-3" style={{ maxWidth: "100%" }}>
-        {/* <a class="btn btn-dark" type="button" id="button-addon2" href="/home">
-          ↩
-        </a> */}
+    <div style={{ maxWidth: "1250px", margin: "auto", padding: "20px" }}>
+      <div className="input-group mb-3" style={{ maxWidth: "100%" }}>
         <input
           type="text"
           className="form-control"
@@ -119,12 +103,6 @@ const QuillEditor = ({ content }) => {
         >
           Publish
         </button>
-      </div>
-      <div class="mb-3">
-        <label for="formFile" class="form-label">
-          Thumbnail
-        </label>
-        <input class="form-control" type="file" id="formFile" />
       </div>
       <div
         ref={editorRef}

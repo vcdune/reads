@@ -35,16 +35,17 @@ const DocumentView = () => {
       <Header />
       <div className="page-view">
         <div className="page-container">
-          {" "}
-          {/* Add a container div */}
           {documentData ? (
             <>
               <h1 className="page-title">{documentData.documentTitle}</h1>
-              <img
-                src={documentData.imageURL}
-                alt={documentData.documentTitle}
-                className="document-image"
-              />
+              <p style={{ textAlign: "center" }}>by {documentData.author}</p>
+              {documentData.imageURL && documentData.imageURL.trim() !== "" && (
+                <img
+                  src={documentData.imageURL}
+                  alt={documentData.documentTitle}
+                  className="document-image"
+                />
+              )}
               <div
                 className="documentView"
                 dangerouslySetInnerHTML={{ __html: documentData.content }}

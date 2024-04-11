@@ -11,6 +11,10 @@ export default function ArticleList() {
   const [searchQuery, setSearchQuery] = useState(""); // State variable for search query
   const db = firebase.firestore();
 
+  const removeHtmlTags = (str) => {
+    return str.replace(/<[^>]*>?/gm, "");
+  };
+
   const fetchDocuments = async () => {
     try {
       const querySnapshot = await db.collection("editorContent").get();
@@ -83,7 +87,7 @@ export default function ArticleList() {
                     >
                       <strong>{document.documentTitle}</strong>
                     </Link>
-                    <p className="document-preview">{document.preview}</p>
+                    <p className="document-preview">{removeHtmlTags(document.content.substring(3, 100))}</p>
                   </div>
                 </li>
               ))}
