@@ -185,7 +185,7 @@
 }
 
 .keyterm {
-  color: rgb(186, 187, 255);
+  color: #939393;
   font-weight: bold;
 }
 
@@ -219,7 +219,8 @@ body {
 } */
 
 .button-simple {
-  background-color: rgb(100, 54, 236);
+  /* nice color: a6b3ac */
+  background-color: #334139;
   color: white;
   padding: 12px 24px;
   text-align: center;
