@@ -34,8 +34,8 @@ export default function Landing() {
             >
               <h1 style={{ fontSize: "100px" }}>Kitaab.</h1>
               <br />
-              the writing platform that looks{" "}
-              <span className="keyterm">good</span>.
+              the writing platform where <span className="keyterm">art</span>x
+              <span className="keyterm">words</span>.
             </h1>
             <p>
               <strong>
@@ -43,7 +43,7 @@ export default function Landing() {
                 {/* <br /> */}
                 {/* by dreamers */}
                 {/* <br /> */}
-                {/* Built in a university dorm. */}
+                Built from a university dorm @ NYU.
               </strong>
             </p>
             <a href="/sign-in" style={{ textDecoration: "none" }}>
