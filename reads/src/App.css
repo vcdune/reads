@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 8%;
+}
+
 /* GOOGLE SIGN-IN */
 .login-with-google-btn {
   transition: background-color 0.3s, box-shadow 0.3s;
@@ -44,6 +51,10 @@
 
 .home {
   margin-top: 10%;
+  border-bottom: 1px solid #ccc;
+}
+
+.document-info {
   border-bottom: 1px solid #ccc;
 }
 
@@ -135,11 +146,19 @@
   font-family: "Manrope", sans-serif;
 }
 
+.document-preview {
+  color: black;
+  font-family: "Manrope", sans-serif;
+}
+
 .document-author,
-.document-preview,
 .document-date {
   color: #98a1b2;
   font-family: "Manrope", sans-serif;
+}
+
+.document-date {
+  font-weight: 500;
 }
 
 .page-view {
@@ -178,6 +197,16 @@
 .resource-list {
   padding: 0;
   margin: 5%;
+}
+
+
+::selection {
+  background-color: #00a071;
+  color: white;
+}
+
+body {
+  background-color: #fbf7f0;
 }
 
 /* .hover-link a:hover::before {

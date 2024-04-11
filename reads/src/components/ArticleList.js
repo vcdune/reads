@@ -55,24 +55,20 @@ export default function ArticleList() {
       ) : (
         <div className="documentList">
           <ul className="post">
-            <input
-              type="text"
-              placeholder="Search articles..."
-              value={searchQuery}
-              onChange={handleSearchChange}
-            />
-            <h4 className="document-item">Latest.</h4>
+            <div className="search-bar">
+              <input
+                type="text"
+                placeholder="Search..."
+                value={searchQuery}
+                onChange={handleSearchChange}
+              />
+            </div>
             {filteredDocuments
               .sort((a, b) => new Date(b.date) - new Date(a.date))
               .map((document) => (
                 <li key={document.id} className="document-item">
-                  <p>
-                    <strong>
-                      <span className="document-date">{document.date}</span>
-                    </strong>
-                  </p>
                   <Link Link to={`/pages/${document.id}`}>
-                    {document.imageURL && ( // Conditionally render image if imageURL exists
+                    {document.imageURL && (
                       <img
                         src={document.imageURL}
                         alt={document.documentTitle}
@@ -86,8 +82,11 @@ export default function ArticleList() {
                       to={`/pages/${document.id}`}
                     >
                       <strong>{document.documentTitle}</strong>
+                      <span className="document-date"> · {document.date}</span>
                     </Link>
-                    <p className="document-preview">{removeHtmlTags(document.content.substring(3, 100))}</p>
+                    <p className="document-preview">
+                      {removeHtmlTags(document.content.substring(3, 100))}
+                    </p>
                   </div>
                 </li>
               ))}

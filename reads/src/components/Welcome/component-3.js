@@ -8,7 +8,7 @@ export default function Component3() {
         justifyContent: "center",
         alignItems: "center",
         color: "black",
-        backgroundColor: "#f1f4f7",
+        backgroundColor: "##babbff17",
         marginBottom: "5%",
       }}
     >
