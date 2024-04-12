@@ -43,7 +43,7 @@ export default function Landing() {
                 {/* <br /> */}
                 {/* by dreamers */}
                 {/* <br /> */}
-                Built from a university dorm @ NYU.
+                Built in a college dorm @ NYU.
               </strong>
             </p>
             <a href="/sign-in" style={{ textDecoration: "none" }}>

@@ -4,8 +4,8 @@ import "firebase/compat/auth";
 import "firebase/compat/database";
 import firebaseConfig from "./firebaseConfig";
 
-let project_name = "Welcome to Kitaab";
-let tagline = "The platform built for MENA.";
+let project_name = "Now, create your account.";
+let tagline = "Kitaab Software.";
 
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
@@ -29,17 +29,19 @@ export default function SignUp() {
   return (
     <div
       className="d-flex align-items-center justify-content-center vh-100"
-      style={{ backgroundColor: "#F1F4F7" }}
+      style={{ backgroundColor: "white" }}
     >
       <div>
         <form>
           <div className="form-group"></div>
-          <h1 className="mb-2" style={{ color: "#223037", fontWeight: "bold" }}>
-            {project_name}
-          </h1>
-          <h5 style={{ fontSize: "18px", color: "#98a1b2" }} className="mb-4">
+          <h5 style={{ fontSize: "18px", color: "#98a1b2" }} className="mb-3">
             {tagline}
           </h5>
+          <h1 className="mb-2" style={{ color: "#333333", fontWeight: "bold" }}>
+            {project_name}
+          </h1>
+          <br />
+          {error && <div className="alert alert-danger">{error}</div>}
           <div>
             <button
               type="button"
@@ -48,6 +50,11 @@ export default function SignUp() {
             >
               Google Sign-In
             </button>
+            <div className="mt-3 text-button">
+              <a href="/">
+                {"< return"}
+              </a>
+            </div>
           </div>
         </form>
       </div>
