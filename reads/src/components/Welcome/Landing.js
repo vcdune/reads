@@ -54,7 +54,7 @@ export default function Landing() {
           </div>
           <div style={{ flex: "1" }}>
             <img
-              src="https://images.unsplash.com/photo-1507671280192-5900ae887d3d?q=80&w=2374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://cdn.pixabay.com/photo/2023/09/18/19/35/heron-8261289_1280.jpg"
               alt="Decorative Image"
               style={{ width: "100%", height: "auto", borderRadius: "30px" }}
             />
