@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Landing from "../components/Welcome/Landing";
 import Component3 from "../components/Welcome/component-3";
 import Footer from "../components/Footer";
+import Why from "../components/Welcome/why";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         </ul>
       </nav>
       <Landing />
+      <Why />
       <Component3 />
       <Footer />
     </div>

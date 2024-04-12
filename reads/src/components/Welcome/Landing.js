@@ -6,7 +6,7 @@ export default function Landing() {
         style={{
           height: "75vh",
           display: "flex",
-          justifyContent: "center", // Adjust alignment as needed
+          justifyContent: "center",
           marginTop: "10%",
         }}
       >
@@ -14,7 +14,7 @@ export default function Landing() {
           className="page-container"
           style={{
             display: "flex",
-            flexDirection: "row", // Arrange columns horizontally
+            flexDirection: "row",
             width: "80%",
             maxWidth: "800px",
             textAlign: "left",
@@ -22,8 +22,8 @@ export default function Landing() {
         >
           <div
             style={{
-              flex: "1", // Take up half of the available space
-              marginRight: "5%", // Adjust spacing between columns
+              flex: "1",
+              marginRight: "5%",
             }}
           >
             <h1
@@ -39,10 +39,6 @@ export default function Landing() {
             </h1>
             <p>
               <strong>
-                {/* For MENA */}
-                {/* <br /> */}
-                {/* by dreamers */}
-                {/* <br /> */}
                 Built in a college dorm @ NYU.
               </strong>
             </p>

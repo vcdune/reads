@@ -189,6 +189,11 @@
   font-weight: bold;
 }
 
+.keyterm-2 {
+  color: #fb651e;
+  font-weight: bold;
+}
+
 .resource-list li {
   list-style-type: none;
 }
