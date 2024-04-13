@@ -4,7 +4,7 @@ export default function Landing() {
       <div
         className="page-view"
         style={{
-          height: "75vh",
+          height: "100vh",
           display: "flex",
           justifyContent: "center",
           marginTop: "10%",
@@ -30,30 +30,24 @@ export default function Landing() {
               style={{
                 marginBottom: "3%",
                 paddingBottom: "1%",
+                width: "70%",
               }}
             >
-              <h1 style={{ fontSize: "100px" }}>Kitaab.</h1>
+              <h1 style={{ fontSize: "126px", color: "#333333"}}>
+              Kitaab
+              </h1>
               <br />
               the writing platform where <span className="keyterm">art</span>x
               <span className="keyterm">words</span>.
             </h1>
             <p>
-              <strong>
-                Built in a college dorm @ NYU.
-              </strong>
+              <strong>Built in a college dorm @ NYU.</strong>
             </p>
             <a href="/sign-in" style={{ textDecoration: "none" }}>
               <button style={{ cursor: "pointer" }} className="button-simple">
                 Start Writing.
               </button>
             </a>
-          </div>
-          <div style={{ flex: "1" }}>
-            <img
-              src="https://cdn.pixabay.com/photo/2023/09/18/19/35/heron-8261289_1280.jpg"
-              alt="Decorative Image"
-              style={{ width: "100%", height: "auto", borderRadius: "30px" }}
-            />
           </div>
         </div>
       </div>

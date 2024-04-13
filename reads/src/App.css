@@ -228,7 +228,8 @@
 
 .button-simple {
   /* nice color: a6b3ac */
-  background-color: #334139;
+  background-color: #222222;
+  font-weight: bold;
   color: white;
   padding: 12px 24px;
   text-align: center;
@@ -244,12 +245,12 @@
 }
 
 .button-simple:hover {
-  background-color: #00a071;
+  background-color: #c07d3b;
   color: white;
 }
 
 .button-simple:active {
-  background-color: #688d68;
+  background-color: #8d7a68;
   color: white;
 }
 
