@@ -105,14 +105,13 @@
 
 .nav a {
   text-decoration: none;
-  color: #858383;
+  color: #000000;
   font-weight: 600;
   font-family: "Manrope", sans-serif;
 }
 
 .nav a:hover {
-  /* font-weight: bold; */
-  color: black;
+  color: #00000099;
 }
 
 .minimal a:hover {

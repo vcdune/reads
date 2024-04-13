@@ -20,7 +20,7 @@ export default function Header() {
       <ul className="nav">
         <li>
           <a href="/home">
-            <strong>Kitaab</strong>
+            Home
           </a>
         </li>
         <li>
