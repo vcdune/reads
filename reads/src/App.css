@@ -73,6 +73,17 @@
   margin-bottom: 10px;
 }
 
+.documentView img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 2%;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+}
+
 /* HEADER */
 .nav {
   display: flex;
