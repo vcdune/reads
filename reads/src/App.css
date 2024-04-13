@@ -218,8 +218,8 @@
 }
 
 ::selection {
-  background-color: #668072;
-  color: white;
+  background-color: #c6c6c6;
+  color: black;
 }
 
 /* .hover-link a:hover::before {

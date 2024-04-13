@@ -20,7 +20,7 @@ const QuillEditor = ({ content }) => {
         theme: "snow",
         modules: {
           toolbar: [
-            [{ header: [1, 2, 3, 4, 5, 6, false] }],
+            [{ header: 1 }, { header: 2 }, { header: 3 }],
             ["bold", "italic", "underline", "strike"],
             [{ color: [] }, { background: [] }],
             [{ list: "ordered" }, { list: "bullet" }],
@@ -44,6 +44,11 @@ const QuillEditor = ({ content }) => {
             quillInstance.current.getLength() > 1 ? "none" : "block";
         }
       });
+
+      // Customize font size for paragraphs
+      const sizeStyle = Quill.import('attributors/style/size');
+      sizeStyle.whitelist = ['14px'];
+      Quill.register(sizeStyle, true);
     }
   }, []);
 
@@ -69,7 +74,7 @@ const QuillEditor = ({ content }) => {
       await editorContentRef.set({
         userID,
         author: displayName,
-        documentTitle, // Include the document title
+        documentTitle,
         content,
         date: currentDate,
       });
@@ -85,7 +90,7 @@ const QuillEditor = ({ content }) => {
   };
 
   return (
-    <div style={{ maxWidth: "1250px", margin: "auto", padding: "20px" }}>
+    <div style={{ maxWidth: "900px", margin: "auto", padding: "20px" }}>
       <div className="input-group mb-3" style={{ maxWidth: "100%" }}>
         <input
           type="text"
@@ -107,10 +112,9 @@ const QuillEditor = ({ content }) => {
       <div
         ref={editorRef}
         style={{
-          maxWidth: "100%", // Adjusted maxWidth property
-          height: "100%",
-          border: "1px solid #ccc",
-          borderRadius: "5px",
+          maxWidth: "100%",
+          height: "500px",
+          border: "1px solid #d9d9d9",
         }}
       />
     </div>
