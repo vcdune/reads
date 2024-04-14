@@ -74,6 +74,7 @@ const QuillEditor = ({ content }) => {
       await editorContentRef.set({
         userID,
         author: displayName,
+        authorImage: user.photoURL,
         documentTitle,
         content,
         date: currentDate,

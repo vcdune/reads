@@ -81,11 +81,11 @@ export default function ArticleList() {
                       className="document-title"
                       to={`/pages/${document.id}`}
                     >
-                      <strong>{document.documentTitle}</strong>
+                      <img src={document.authorImage} alt={document.author} style={{ borderRadius: "50%", maxWidth: "30px", height: "auto", marginRight: "4px" }} /> <strong>{document.documentTitle}</strong>
                       <span className="document-date"> · {document.date}</span>
                     </Link>
                     <p className="document-preview">
-                      {removeHtmlTags(document.content.substring(3, 100))}
+                      {removeHtmlTags(document.content.substring(3, 100))}...
                     </p>
                   </div>
                 </li>
