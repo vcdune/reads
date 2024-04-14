@@ -8,9 +8,9 @@ export default function UpperDashboard() {
   const pfp = firebase.auth().currentUser?.photoURL;
 
   return (
-    <div style={{ borderBottom: "1px solid #cdd1da", minHeight: "20px" }}>
-      <h4 className="welcome" style={{ display: "flex", alignItems: "center" }}>
-      <img src={pfp} style={{borderRadius: "100%", width: "3em", height: "3em", marginRight: "1em", verticalAlign: "middle"}}/> Welcome, {userName}.
+    <div className="upper-dash">
+      <h4>
+      <img src={pfp} style={{borderRadius: "100%", width: "2.5em", height: "2.5em", marginRight: "1em", verticalAlign: "middle"}}/> Welcome, {userName}.
       </h4>
       {userID && <DocumentList userID={userID} />}
     </div>

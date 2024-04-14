@@ -9,22 +9,20 @@ export default function ProfileDash() {
     firebase
       .auth()
       .signOut()
-      .then(() => {})
+      .then(() => { })
       .catch((error) => {
         console.error("Error signing out:", error.message);
       });
   };
 
   return (
-    <div className="">
-      <div className="profile-container">
-        <img src={user.photoURL} alt={user.displayName} />
-        <h3>{user.displayName}</h3>
-        <p>A random and not-so-stupid bio.</p>
-        <button onClick={handleSignOut} className="btn btn-dark btn-sm">
-          Sign Out
-        </button>
-      </div>
+    <div className="profile-container">
+      <img src={user.photoURL} alt={user.displayName} />
+      <h3>{user.displayName}</h3>
+      <p>A random and not-so-stupid bio.</p>
+      <button onClick={handleSignOut} className="btn btn-dark btn-sm">
+        Sign Out
+      </button>
     </div>
   );
 }
