@@ -38,6 +38,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-If you have any questions or suggestions regarding the project, feel free to contact us at [your-email@example.com](mailto:your-email@example.com).
+If you have any questions or suggestions regarding the project, feel free to contact us at [am13948@nyu.edu](mailto:am13948@nyu.edu).
 
 Thank you for your interest in our project! Happy coding!
