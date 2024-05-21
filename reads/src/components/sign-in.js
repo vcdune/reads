@@ -4,9 +4,6 @@ import "firebase/compat/auth";
 import "firebase/compat/database";
 import firebaseConfig from "./firebaseConfig";
 
-let project_name = "Now, create your account.";
-let tagline = "Hello, welcome to Arete.";
-
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
@@ -35,10 +32,10 @@ export default function SignUp() {
         <form>
           <div className="form-group"></div>
           <h5 style={{ fontSize: "18px", color: "#98a1b2" }} className="mb-3">
-            {tagline}
+            Hello, welcome to Arete.
           </h5>
           <h1 className="mb-2" style={{ color: "#333333", fontWeight: "bold" }}>
-            {project_name}
+            Now, create your account.
           </h1>
           <br />
           {error && <div className="alert alert-danger">{error}</div>}
@@ -51,9 +48,7 @@ export default function SignUp() {
               Google Sign-In
             </button>
             <div className="mt-3 text-button">
-              <a href="/">
-                {"< return"}
-              </a>
+              <a href="/">{"< return"}</a>
             </div>
           </div>
         </form>

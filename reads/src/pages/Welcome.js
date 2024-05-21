@@ -1,7 +1,5 @@
-import Header from "../components/Header";
-import Landing from "../components/Welcome/Landing";
+import Landing from "../components/Landing";
 import Footer from "../components/Footer";
-import Why from "../components/Welcome/why";
 
 export default function Home() {
   return (
@@ -16,7 +14,6 @@ export default function Home() {
         </ul>
       </nav>
       <Landing />
-      {/* <Why /> */}
       <Footer />
     </div>
   );

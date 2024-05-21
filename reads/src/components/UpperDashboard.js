@@ -9,9 +9,6 @@ export default function UpperDashboard() {
 
   return (
     <div className="upper-dash">
-      <h4>
-      {/* {userName} */}
-      </h4>
       {userID && <DocumentList userID={userID} />}
     </div>
   );

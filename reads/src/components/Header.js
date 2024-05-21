@@ -19,9 +19,7 @@ export default function Header() {
     <nav className="header hover-link">
       <ul className="nav">
         <li>
-          <a href="/home">
-            Home
-          </a>
+          <a href="/home">Home</a>
         </li>
         <li>
           <a href="/community-blog">Community</a>
