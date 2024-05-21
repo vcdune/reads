@@ -8,14 +8,13 @@ export default function Component3() {
         justifyContent: "center",
         alignItems: "center",
         color: "black",
-        backgroundColor: "##babbff17",
-        marginBottom: "5%",
+        backgroundColor: "#f7f7f0",
       }}
     >
       <div className="page-container" style={{ marginBottom: "3%" }}>
         <h1>
           <a href="/pages/IlRxuneCzplHkSKrNYK0">
-            <span className="keyterm">a message from the team :D</span>
+            <span className="keyterm">a message from the team</span>
           </a>
         </h1>
         <p style={{ lineHeight: "2", fontSize: "22px" }}>

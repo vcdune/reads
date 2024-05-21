@@ -4,10 +4,12 @@ export default function Landing() {
       <div
         className="page-view"
         style={{
-          height: "100vh",
+          height: "75vh",
           display: "flex",
           justifyContent: "center",
-          marginTop: "10%",
+          marginTop: "5%",
+          backgroundColor: "black",
+          color: "#ffffff",
         }}
       >
         <div
@@ -16,7 +18,7 @@ export default function Landing() {
             display: "flex",
             flexDirection: "row",
             width: "80%",
-            maxWidth: "800px",
+            maxWidth: "1000px",
             textAlign: "left",
           }}
         >
@@ -33,9 +35,7 @@ export default function Landing() {
                 width: "70%",
               }}
             >
-              <h1 style={{ fontSize: "126px", color: "#333333"}}>
-              Kitaab
-              </h1>
+              <h1 style={{ fontSize: "126px" }}>Arete</h1>
               <br />
               the writing platform where <span className="keyterm">art</span>x
               <span className="keyterm">words</span>.
@@ -44,8 +44,20 @@ export default function Landing() {
               <strong>Built in a college dorm @ NYU.</strong>
             </p>
             <a href="/sign-in" style={{ textDecoration: "none" }}>
-              <button style={{ cursor: "pointer" }} className="button-simple">
-                Start Writing.
+              <button className="button-simple">
+                Start writing{" "}
+                <svg
+                  width="9"
+                  height="7"
+                  viewBox="0 0 9 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.08709 0.459961L8.05509 3.42796L5.08709 6.39596H3.50509L5.84309 4.04396H0.663086V2.79796L5.84309 2.81196L3.50509 0.459961H5.08709Z"
+                    fill="white"
+                  ></path>
+                </svg>
               </button>
             </a>
           </div>

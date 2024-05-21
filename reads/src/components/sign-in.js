@@ -5,7 +5,7 @@ import "firebase/compat/database";
 import firebaseConfig from "./firebaseConfig";
 
 let project_name = "Now, create your account.";
-let tagline = "Kitaab Software.";
+let tagline = "Hello, welcome to Arete.";
 
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);

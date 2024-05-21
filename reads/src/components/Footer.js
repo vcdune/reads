@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <div
-      style={{ minHeight: "25vh", display: "flex", flexDirection: "column" }}
+      style={{ minHeight: "25vh", display: "flex", flexDirection: "column", backgroundColor: "white" }}
     >
       <div class="container" style={{ flex: "1" }}></div>
       <footer class="py-3 my-4">
@@ -9,26 +9,26 @@ export default function Footer() {
           <li class="nav-item">
             <a
               href="/pages/0sL47DcEzbiytPhIBsHU"
-              class="nav-link px-2 text-muted"
+              class="nav-link px-2"
             >
               Socials
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-muted">
+            <a href="#" class="nav-link px-2">
               FAQs
             </a>
           </li>
           <li class="nav-item">
             <a
               href="/pages/UG10wTSFOKXcRqaWfLz8"
-              class="nav-link px-2 text-muted"
+              class="nav-link px-2"
             >
               About
             </a>
           </li>
         </ul>
-        <p class="text-center text-muted">Dune © 2024</p>
+        <p class="text-center">Arete © 2024</p>
       </footer>
     </div>
   );

@@ -10,7 +10,7 @@ export default function UpperDashboard() {
   return (
     <div className="upper-dash">
       <h4>
-      <img src={pfp} style={{borderRadius: "100%", width: "2.5em", height: "2.5em", marginRight: "1em", verticalAlign: "middle"}}/> Welcome, {userName}.
+      {/* {userName} */}
       </h4>
       {userID && <DocumentList userID={userID} />}
     </div>

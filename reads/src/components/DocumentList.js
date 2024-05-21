@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 
-
-
 const DocumentList = ({ userID }) => {
   const [documents, setDocuments] = useState([]);
   const db = firebase.firestore();
@@ -59,8 +57,8 @@ const DocumentList = ({ userID }) => {
           No documents found. <a href="/editor">Start writing.</a>
         </p>
       ) : (
-        <div className="documentList">
-          <h4 style={{ fontSize: "18px" }}>Your Pages</h4>
+        <div className="myDocuments">
+          <h4 style={{ fontSize: "18px" }}>Your Writings</h4>
           <ul className="post">
             {documents.map((document) => (
               <li key={document.id} style={{ marginBottom: "4%" }}>
@@ -84,16 +82,12 @@ const DocumentList = ({ userID }) => {
                   <div style={{ marginLeft: "10px" }}>
                     <button
                       onClick={() => handleDelete(document.id)}
-                      className="minimalButton"
+                      className="black-button"
                     >
                       Delete
                     </button>
-                    <Link to={`/edit`} className="minimalButton">
-                      Edit
-                    </Link>
                   </div>
                 </div>
-                {/* <p>{removeHtmlTags(document.content.substring(3, 170))}</p> */}
               </li>
             ))}
           </ul>
