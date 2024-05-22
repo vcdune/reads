@@ -32,8 +32,8 @@ const QuillEditor = ({ content }) => {
 
       // Set placeholder text
       quillInstance.current.clipboard.dangerouslyPasteHTML(
-        1,
-        "<h3>Start Writing...</h3>"
+        0,
+        "<p>This is your page, get started by writing...</p>"
       );
 
       // Handle focus event to remove placeholder
@@ -91,7 +91,7 @@ const QuillEditor = ({ content }) => {
   };
 
   return (
-    <div style={{ maxWidth: "900px", margin: "auto", padding: "20px" }}>
+    <div style={{ maxWidth: "800px", margin: "auto", padding: "20px", }}>
       <div className="input-group mb-3" style={{ maxWidth: "100%" }}>
         <input
           type="text"
@@ -113,9 +113,10 @@ const QuillEditor = ({ content }) => {
       <div
         ref={editorRef}
         style={{
+          backgroundColor: "white",
           maxWidth: "100%",
-          height: "500px",
-          border: "1px solid #d9d9d9",
+          height: "70vh",
+          border: "1px solid #c7c7c7",
         }}
       />
     </div>

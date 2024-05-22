@@ -250,8 +250,8 @@
 }
 
 ::selection {
-  background-color: #c6c6c6;
-  color: black;
+  background-color: #0096f7;
+  color: rgb(255, 255, 255);
 }
 
 /* .hover-link a:hover::before {
@@ -362,4 +362,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.ql-toolbar {
+  background-color: white;
 }
