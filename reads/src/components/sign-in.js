@@ -32,7 +32,7 @@ export default function SignUp() {
             Hello, happy to see you here.
           </h5>
           <h1 style={{ color: "#333333", fontWeight: "bold" }}>
-            Now, start by signing-in with Google.
+            Start by signing-in with Google.
           </h1>
           <br />
           {error && <div className="alert alert-danger">{error}</div>}
