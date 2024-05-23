@@ -5,7 +5,6 @@ export default function Footer() {
         minHeight: "25vh",
         display: "flex",
         flexDirection: "column",
-        backgroundColor: "white",
       }}
     >
       <div class="container" style={{ flex: "1" }}></div>
