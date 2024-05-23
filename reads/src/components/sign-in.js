@@ -4,7 +4,6 @@ import "firebase/compat/auth";
 import "firebase/compat/database";
 import firebaseConfig from "./firebaseConfig";
 
-
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
@@ -25,17 +24,14 @@ export default function SignUp() {
   };
 
   return (
-    <div
-      className="d-flex align-items-center justify-content-center vh-100"
-      style={{ backgroundColor: "white" }}
-    >
+    <div className="register-page">
       <div>
         <form>
           <div className="form-group"></div>
           <h5 style={{ fontSize: "18px", color: "#98a1b2" }} className="mb-3">
             Hello, happy to see you here.
           </h5>
-          <h1 className="mb-2" style={{ color: "#333333", fontWeight: "bold" }}>
+          <h1 style={{ color: "#333333", fontWeight: "bold" }}>
             Now, start by signing-in with Google.
           </h1>
           <br />

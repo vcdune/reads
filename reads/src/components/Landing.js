@@ -8,8 +8,8 @@ export default function Landing() {
           display: "flex",
           justifyContent: "center",
           marginTop: "5%",
-          backgroundColor: "black",
-          color: "#ffffff",
+          backgroundColor: "white",
+          color: "black",
         }}
       >
         <div
@@ -37,7 +37,7 @@ export default function Landing() {
             >
               <h1 style={{ fontSize: "126px" }}>Arete</h1>
               <br />
-              the writing platform where <span className="keyterm">art</span>x
+              the writing platform where <span className="keyterm">design</span>x
               <span className="keyterm">words</span>.
             </h1>
             <p>

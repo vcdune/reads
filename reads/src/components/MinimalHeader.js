@@ -17,10 +17,10 @@ export default function MinimalHeader() {
 
   return (
     <nav className="header hover-link">
-      <ul className="nav minimal">
+      <ul className="minimal">
         <li>
           <a href="/home">
-            <strong>{"< < < <"}</strong>
+            {"< < <"}
           </a>
         </li>
       </ul>

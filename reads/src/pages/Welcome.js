@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div style={{ backgroundColor: "black" }}>
+    <div style={{ backgroundColor: "white" }}>
       <nav className="header hover-link">
         <ul className="nav">
           <li>
