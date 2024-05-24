@@ -16,8 +16,8 @@ export default function Header() {
   }, []);
 
   return (
-    <nav className="header hover-link" style={{width: "100%"}}>
-      <ul className="nav">
+    <nav className="hover-link">
+      <ul className="navigation-bar">
         <li>
           <a href="/home">Home</a>
         </li>

@@ -95,7 +95,7 @@ const QuillEditor = ({ content }) => {
       <div className="input-group mb-3" style={{ maxWidth: "100%" }}>
         <input
           type="text"
-          className="form-control"
+          className="title-input form-control"
           placeholder="Document Title"
           aria-label="Document Title"
           value={documentTitle}

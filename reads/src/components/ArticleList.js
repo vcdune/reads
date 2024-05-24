@@ -58,7 +58,7 @@ export default function ArticleList() {
             <div className="search-bar">
               <input
                 type="text"
-                placeholder="Search..."
+                placeholder="Search articles written by others..."
                 value={searchQuery}
                 onChange={handleSearchChange}
               />

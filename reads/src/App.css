@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 .search-bar {
-  display: flex;
   justify-content: center;
-  margin-top: 2%;
-  margin-bottom: 8%;
+  margin-bottom: 35px;
+  display: flex;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 .upper-dash {
@@ -89,14 +95,28 @@
   border-radius: 10px;
 }
 
+.title-input {
+  text-align: center;
+  font-size: 24px;
+}
+
 /* HEADER */
+.navigation-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #f6f6f6;
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
 .nav,
 .minimal {
   display: flex;
   justify-content: center;
   list-style-type: none;
   padding: 0;
-  max-width: 700px;
   margin: 0 auto;
   padding-top: 3%;
 }
@@ -107,12 +127,13 @@
 }
 
 .nav li,
-.minimal li {
+.minimal li,
+.navigation-bar li {
   display: inline;
 }
 
-.nav li {
-  margin-right: 10px;
+.navigation-bar li {
+  margin-right: 25px;
 }
 
 .nav a,
@@ -120,7 +141,16 @@
   text-decoration: none;
   color: #000000;
   font-weight: 600;
-  font-family: "Manrope", sans-serif;
+}
+
+.navigation-bar a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: 600;
+}
+
+.navigation-bar a:hover {
+  color: #636363;
 }
 
 .nav a:hover {
