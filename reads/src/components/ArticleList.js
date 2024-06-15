@@ -85,7 +85,7 @@ export default function ArticleList() {
                         src={document.authorImage}
                         alt={document.author}
                         style={{
-                          borderRadius: "50%",
+                          borderRadius: "8px",
                           maxWidth: "30px",
                           height: "auto",
                           marginRight: "4px",
