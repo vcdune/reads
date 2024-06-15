@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .document-item {
+    width: 90vw;
+    margin: 10px 0px !important;
+  }
+}
+
+
+/* Search Bar */
 .search-bar {
   justify-content: center;
   margin-bottom: 10px;
@@ -194,13 +204,17 @@
   max-width: 100%;
 }
 
+ul.post {
+  list-style-type: none;
+  padding: 0px;
+}
+
 .documentList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
   padding: 0;
-  margin: 3% 8% 0% 8%;
   max-width: 100%;
 }
 
