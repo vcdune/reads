@@ -11,6 +11,11 @@ export default function ArticleList() {
   const [searchQuery, setSearchQuery] = useState(""); // State variable for search query
   const db = firebase.firestore();
 
+  const formatDate = (date) => {
+    const options = { month: "long", day: "numeric" };
+    return new Date(date).toLocaleDateString(undefined, options);
+  };
+
   const removeHtmlTags = (str) => {
     return str.replace(/<[^>]*>?/gm, "");
   };
@@ -92,7 +97,7 @@ export default function ArticleList() {
                         }}
                       />{" "}
                       <strong>{document.documentTitle}</strong>
-                      <span className="document-date"> · {document.date}</span>
+                      <span className="document-date"> · {formatDate(document.date)}</span>
                     </Link>
                     <p className="document-preview">
                       {removeHtmlTags(document.content.substring(3, 100))}...
@@ -104,8 +109,7 @@ export default function ArticleList() {
         </div>
       )}
     </div>
-  );
-}
+  );}
 
 const override = css`
   display: block;
