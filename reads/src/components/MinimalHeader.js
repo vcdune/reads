@@ -16,12 +16,10 @@ export default function MinimalHeader() {
   }, []);
 
   return (
-    <nav className="header hover-link">
+    <nav>
       <ul className="minimal">
         <li>
-          <a href="/home">
-            {"< < <"}
-          </a>
+          <a href="/home">Return</a>
         </li>
       </ul>
     </nav>

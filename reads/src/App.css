@@ -319,13 +319,6 @@
   color: rgb(255, 255, 255);
 }
 
-/* .hover-link a:hover::before {
-  content: ">";
-  color: rgb(186, 187, 255);
-  text-decoration: underline;
-  padding-right: 5px;
-} */
-
 .text-button {
   color: #333333;
   font-weight: bold;
