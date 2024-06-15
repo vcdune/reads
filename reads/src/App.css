@@ -96,6 +96,28 @@
 }
 
 /* HEADER */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.header li a {
+  padding-right: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.header li a:hover {
+  text-decoration: underline;
+}
+
+.header li {
+  display: inline;
+}
+
 .navigation-bar {
   display: flex;
   justify-content: center;
