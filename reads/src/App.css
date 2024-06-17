@@ -104,6 +104,12 @@
   border: 1.5px solid #ccc;
 }
 
+.documentView br {
+  content: "";
+  margin: 43px;
+  display: block;
+}
+
 .title-input {
   text-align: center;
   font-size: 24px;
