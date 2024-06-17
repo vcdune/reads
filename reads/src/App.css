@@ -303,8 +303,8 @@ ul.post {
 }
 
 ::selection {
-  background-color: #0096f7;
-  color: rgb(255, 255, 255);
+  background-color: #000000;
+  color: #fff;
 }
 
 .text-button {
