@@ -6,6 +6,10 @@
     width: 90vw;
     margin: 10px 0px !important;
   }
+
+  .register-page {
+    text-align: center;
+  }
 }
 
 
@@ -172,25 +176,13 @@
   font-weight: 600;
 }
 
-.navigation-bar a {
-  text-decoration: none;
-  color: #010101;
-  font-weight: 600;
-}
-
-.navigation-bar a:hover {
-  color: #1e1e1e;
-}
-
 .nav a:hover {
   color: #00000099;
 }
 
 .minimal a:hover {
-  color: #0096f7 !important;
+  color: #2a2d2f;
 }
-
-/* Added closing curly brace */
 
 /* DOCUMENT LIST */
 .upper-dash {
@@ -273,6 +265,7 @@ ul.post {
 .document-preview {
   color: black;
   font-family: "Manrope", sans-serif;
+  margin-top: 10px;
 }
 
 .document-author,
@@ -294,7 +287,6 @@ ul.post {
   width: 100%;
   margin: 2% 5% 5% 5%;
   font-family: "Manrope", sans-serif;
-  /* top, right, bottom, left */
 }
 
 .page-title {
@@ -302,30 +294,6 @@ ul.post {
   font-weight: bold;
   margin: 10% 0 10% 0;
   text-align: center;
-}
-
-.keyterm {
-  color: #939393;
-  font-weight: bold;
-}
-
-.keyterm-2 {
-  color: #fb651e;
-  font-weight: bold;
-}
-
-.resource-list li {
-  list-style-type: none;
-}
-
-.resource-list li a {
-  list-style-type: none;
-  font-size: 22px;
-}
-
-.resource-list {
-  padding: 0;
-  margin: 5%;
 }
 
 ::selection {
@@ -356,7 +324,6 @@ ul.post {
 }
 
 .button-simple {
-  /* nice color: a6b3ac */
   background-color: #0096f7;
   color: white;
   padding: 12px 24px;
@@ -380,48 +347,6 @@ ul.post {
   color: white;
 }
 
-/* DIRECTORY */
-.directory-container {
-  margin: 3% 15%;
-  font-family: "Manrope", sans-serif;
-}
-
-.search-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-.startup-list {
-  display: grid;
-  gap: 20px;
-}
-
-.startup-item {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 10px;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-}
-
-.startup-logo {
-  width: 70px;
-  height: auto;
-  border-radius: 5px;
-  margin-right: 20px;
-}
-
-.startup-info {
-  margin-top: 10px;
-}
-
-.view-details-link {
-  display: block;
-  margin-top: 10px;
-}
-
 .loading-spinner {
   display: flex;
   justify-content: center;
@@ -436,12 +361,6 @@ ul.post {
   align-items: center;
   margin: auto;
   height: 100vh;
-}
-
-@media screen and (max-width: 600px) {
-  .register-page {
-    text-align: center;
-  }
 }
 
 .ql-toolbar {
