@@ -97,7 +97,8 @@
   margin-bottom: 10px;
 }
 
-.documentView img {
+.documentView img,
+.docuImage {
   width: 100%;
   height: auto;
   max-width: 100%;
@@ -164,23 +165,6 @@
   font-size: 16px;
 }
 
-.nav,
-.minimal {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  padding: 0;
-  margin: 0 auto;
-  padding-top: 3%;
-}
-
-.nav {
-  border-bottom: 1px solid #c2c2c2;
-  padding-bottom: 20px;
-}
-
-.nav li,
-.minimal li,
 .navigation-bar li {
   display: inline;
 }
@@ -189,19 +173,8 @@
   margin-right: 25px;
 }
 
-.nav a,
-.minimal a {
-  text-decoration: none;
-  color: #000000;
-  font-weight: 600;
-}
-
 .nav a:hover {
   color: #00000099;
-}
-
-.minimal a:hover {
-  color: #2a2d2f;
 }
 
 /* DOCUMENT LIST */
@@ -404,4 +377,13 @@ ul.post {
 .post-button:hover {
   background-color: #e1764f;
   transition: background-color 0.1s ease;
+}
+
+.return-text {
+  color: #333333;
+  text-decoration: none;
+}
+
+.return-text:hover {
+  text-decoration: underline;
 }
