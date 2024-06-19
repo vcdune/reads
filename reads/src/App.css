@@ -114,7 +114,6 @@
 }
 
 .title-input {
-  text-align: center;
   font-size: 24px;
 }
 
@@ -385,5 +384,8 @@ ul.post {
 }
 
 .ql-toolbar {
-  background-color: white;
+  background-color: #2d2d2d;
+  border-radius: 8px;
+  /* border: 2px solid #ccc; */
+  box-shadow: 1.5px 1.5px 0px 1px #acacac;
 }
