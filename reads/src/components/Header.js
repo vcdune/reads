@@ -46,7 +46,7 @@ export default function Header() {
           <a href="/community-blog">Community</a>
         </li>
         <li>
-          <a href="/editor">Publish</a>
+          <a href="/editor">New Post</a>
         </li>
         <li>
           <a href="/profile">Profile</a>

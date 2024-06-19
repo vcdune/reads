@@ -389,3 +389,19 @@ ul.post {
   /* border: 2px solid #ccc; */
   box-shadow: 1.5px 1.5px 0px 1px #acacac;
 }
+
+.post-button {
+  background-color: #d7d3d0;
+  color: white;
+  border: 0px;
+  border-radius: 8px;
+  padding: 6px 26px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.post-button:hover {
+  background-color: #e1764f;
+  transition: background-color 0.1s ease;
+}
