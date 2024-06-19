@@ -103,6 +103,8 @@
   margin-bottom: 10px;
 }
 
+
+.editor img,
 .documentView img,
 .docuImage {
   width: 100%;
@@ -417,7 +419,7 @@ ul.post {
 
 .page-view h1,
 .editor h1 {
-  font-size: 1.9rem;
+  font-size: 1.3rem;
 }
 
 .editor .ql-editor::before {
