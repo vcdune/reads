@@ -121,7 +121,7 @@ const DocumentView = () => {
                 {documentData.author}
               </div>
               <h1 className="page-title">{documentData.documentTitle}</h1>
-              <p style={{ textAlign: "center" }}>{documentData.author}</p>
+              <p style={{ textAlign: "center" }}>by {documentData.author}</p>
               {documentData.imageURL && documentData.imageURL.trim() !== "" && (
                 <img
                   src={documentData.imageURL}
