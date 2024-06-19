@@ -295,7 +295,7 @@ ul.post {
 }
 
 .page-title {
-  font-size: clamp(3rem, 1.2394366197rem + 3.6948356808vw, 5rem);
+  font-size: clamp(1rem, 1.2394366197rem + 2.6948356808vw, 3rem) !important;
   font-weight: bold;
   margin: 10% 0 10% 0;
   text-align: center;
@@ -421,7 +421,7 @@ ul.post {
 
 .page-view h1,
 .editor h1 {
-  font-size: 1.9rem !important;
+  font-size: 1.9rem;
 }
 
 .editor .ql-editor::before {
