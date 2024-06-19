@@ -387,3 +387,11 @@ ul.post {
 .return-text:hover {
   text-decoration: underline;
 }
+
+.nav-item a {
+  color: #898684;
+}
+
+.nav-item a:hover {
+  color: #333333;
+}

@@ -5,13 +5,14 @@ export default function Footer() {
         minHeight: "25vh",
         display: "flex",
         flexDirection: "column",
+        borderRadius: "8px",
       }}
     >
       <div class="container" style={{ flex: "1" }}></div>
       <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
-            <a href="/pages/0sL47DcEzbiytPhIBsHU" class="nav-link px-2">
+            <a href="#" class="nav-link px-2">
               Socials
             </a>
           </li>
@@ -26,7 +27,6 @@ export default function Footer() {
             </a>
           </li>
         </ul>
-        <p class="text-center">Arete © 2024</p>
       </footer>
     </div>
   );
