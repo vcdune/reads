@@ -131,6 +131,10 @@
   margin-right: auto; /* Pushes the logo to the left */
 }
 
+.logo-text {
+  margin-left: 6px;
+}
+
 .nav-links {
   list-style-type: none;
   display: flex;
