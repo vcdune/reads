@@ -15,7 +15,7 @@ const QuillEditor = () => {
 
   const modules = {
     toolbar: [
-      [{ header: "1" }, { header: "2" }],
+      [{ header: "1" }],
       [{ list: "bullet" }],
       ["bold", "italic", "underline", "strike", "blockquote"],
       // [{ 'script': 'sub'}, { 'script': 'super' }],
@@ -115,18 +115,12 @@ const QuillEditor = () => {
         }}
       />
       <ReactQuill
+        className="editor"
         value={editorContent}
         onChange={handleEditorChange}
         theme="bubble"
         placeholder="Write your mind..."
         modules={modules}
-        style={{
-          // backgroundColor: "white",
-          maxWidth: "100%",
-          height: "80vh",
-          borderRadius: "8px",
-          // border: "1px solid #ccc",
-        }}
       />
     </div>
   );
