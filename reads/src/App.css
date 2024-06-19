@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
+@font-face {
+  font-family: "behance";
+  src: url("../fonts/Geist-1.3.0/Geist-1.3.0/statics-otf/Geist-Medium.otf") format("opentype");
+}
+
+.header {
+  font-family: "behance";
+}
+
 /* Mobile */
 @media screen and (max-width: 600px) {
   .document-item {

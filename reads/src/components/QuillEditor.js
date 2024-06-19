@@ -22,7 +22,7 @@ const QuillEditor = () => {
       // [{ 'color': [] }, { 'background': [] }],
       // [{ 'align': [] }],
       ["link", "image"],
-      ["clean"],
+      // ["clean"],
     ],
   };
 

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "behance";
+  src: url("../fonts/Geist-1.3.0/Geist-1.3.0/statics-otf/Geist-Medium.otf") format("opentype");
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'din-round-pro', 'Segoe UI', 'Roboto', 'Oxygen',
