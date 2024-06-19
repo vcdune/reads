@@ -3,7 +3,7 @@ export default function Header() {
     <nav className="header">
       <h5 className="logo">
         <svg
-          fill="#e1764f"
+          fill="black"
           width="22px"
           height="22px"
           viewBox="-2 -2 24 24"
