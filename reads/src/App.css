@@ -6,10 +6,6 @@
     format("opentype");
 }
 
-.header {
-  font-family: "behance";
-}
-
 /* Mobile */
 @media screen and (max-width: 600px) {
   .document-item {
@@ -134,9 +130,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  margin-bottom: 25px;
   max-width: 90%;
   margin: auto;
+  font-family: "behance";
 }
 
 .logo {
